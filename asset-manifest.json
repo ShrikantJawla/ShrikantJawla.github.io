@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shrikantjawla.github.io/static/css/main.541427be.css",
+    "main.js": "/shrikantjawla.github.io/static/js/main.23742474.js",
+    "index.html": "/shrikantjawla.github.io/index.html",
+    "main.541427be.css.map": "/shrikantjawla.github.io/static/css/main.541427be.css.map",
+    "main.23742474.js.map": "/shrikantjawla.github.io/static/js/main.23742474.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.541427be.css",
+    "static/js/main.23742474.js"
+  ]
+}
