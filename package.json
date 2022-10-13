@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shrikant-jawla.github.io/ShrikantJawla1",
+  "homepage": "https://shrikantjawla.github.io/shrikantjawla.github.io",
   "dependencies": {
     "@chakra-ui/react": "^2.3.5",
     "@emotion/react": "^11.10.4",
