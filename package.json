@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://shrikantjawla.github.io/shrikantjawla.github.io",
   "dependencies": {
     "@chakra-ui/react": "^2.3.5",
