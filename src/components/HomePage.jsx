@@ -1,22 +1,42 @@
-import { Box, HStack, Image, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
-import styled from 'styled-components'
-import EmptyLaptopWithImage from './EmptyLaptopWithImage'
-import EmptyPhone from './EmptyPhone'
-import EmptyTablet from './EmptyTablet'
 import FIrstFullPageAnimation from './FIrstFullPageAnimation'
+import Intro from './HomePageComponents/Intro'
 import Navbar from './Navbar'
+import { useScroll } from 'framer-motion'
+import ConnectLinks from './HomePageComponents/ConnectLinks'
 
 const bgColor = '#fefffe'
 const footerColor = '#f4f5f6'
 const secondbgColor = '#f4f5f6'
 
 function HomePage() {
+  const { scrollY } = useScroll()
+  const [linksposition, setlinkposition] = React.useState({
+    top: '28px',
+    left: '45vw',
+  })
+  const [scrollpos, setscrollpos] = React.useState(0)
+  scrollY.onChange((pos) => {
+    if (pos <= 100) {
+      setlinkposition({ top: '28px', left: '45vw' })
+      setscrollpos(0)
+    } else {
+      setlinkposition({ top: '40vh', left: '1%' })
+      setscrollpos(100)
+    }
+  })
+
+  const linksDir = {
+    position: scrollpos === 0 ? 'row' : 'column',
+  }
   return (
-    <VStack>
+    <>
       <Navbar />
+      <ConnectLinks linksDir={linksDir} linksposition={linksposition} />
       <FIrstFullPageAnimation />
-    </VStack>
+      <Intro />
+      <Intro />
+    </>
   )
 }
 
