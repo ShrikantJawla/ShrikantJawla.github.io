@@ -32,7 +32,7 @@
     },
     {
       "title": "Tesla",
-      "image": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/tesla.png?raw=true",
+      "image": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/tesla/tesla.png?raw=true",
       "description": "Cloned some parts of Tesla website which is an automotive and energy company. It designs, develops, manufactures, sells, and leases electric vehicles and energy generation and storage systems.",
       "skills": [
         "React",
@@ -48,21 +48,21 @@
       },
       "screenshots": {
         "home": {
-          "sm": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/SurveyMonkeySmallScreen.png?raw=true",
-          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true",
-          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
+          "sm": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/tesla/teslasmallScreenSS.png?raw=true",
+          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/tesla/teslaMediumScreenSS.png?raw=true",
+          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/tesla/teslaHomePageLargeSS.png?raw=true"
         },
         "secondPage": {
-          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
+          "lg": ""
         },
         "otherPages": {
-          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true"
+          "lg": ""
         }
       }
     },
     {
       "title": "Survey-Monkey-clone",
-      "image": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/sm1.png?raw=true",
+      "image": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkey/sm1.png?raw=true",
       "description": "Clone of a well-known website that let users to create, send and analyze sophisticated survey templates.",
       "skills": ["HTML", "CSS", "JavaScript", "LocalStorage", "Netlify"],
       "links": {
@@ -71,15 +71,15 @@
       },
       "screenshots": {
         "home": {
-          "sm": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/SurveyMonkeySmallScreen.png?raw=true",
-          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true",
-          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
+          "sm": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkey/SurveyMonkeySmallScreen.png?raw=true",
+          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkey/surveyMonkeyMediumScreeenSS.png?raw=true",
+          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkey/surveyMonkeyHomeFullScreenhot.png?raw=true"
         },
         "secondPage": {
-          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
+          "lg": ""
         },
         "otherPages": {
-          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true"
+          "lg": ""
         }
       }
     }
