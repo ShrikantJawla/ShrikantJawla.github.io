@@ -6,7 +6,7 @@ import LeftProjectsSection from './LeftProjectsSection'
 
 function AllProjects() {
   return (
-    <VStack w='full' bg='#f4f5f6' pt='10' overflow='hidden'>
+    <VStack w="full" bg="#f4f5f6" pt="10" overflow="hidden">
       <Text
         w="full"
         textAlign="center"
@@ -24,6 +24,7 @@ function AllProjects() {
             skills={project.skills}
             description={project.description}
             image={project.image}
+            screenShots={project.screenshots}
           />
         ) : (
           <LeftProjectsSection
@@ -32,6 +33,7 @@ function AllProjects() {
             skills={project.skills}
             description={project.description}
             image={project.image}
+            screenShots={project.screenshots}
           />
         ),
       )}

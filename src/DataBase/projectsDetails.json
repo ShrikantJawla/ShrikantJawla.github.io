@@ -17,10 +17,16 @@
         "deploy_link": "https://zoomcar-clone-five.vercel.app/"
       },
       "screenshots": {
-        "surveyMonkey": {
+        "home": {
           "sm": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/SurveyMonkeySmallScreen.png?raw=true",
           "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true",
-          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
+          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/zoomcarHomePageFullSS.png?raw=true"
+        },
+        "secondPage": {
+          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/ZpomCarHostPage.png?raw=true"
+        },
+        "otherPages": {
+          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true"
         }
       }
     },
@@ -41,10 +47,16 @@
         "deploy_link": "https://shrikant-tesla-clone.vercel.app/"
       },
       "screenshots": {
-        "surveyMonkey": {
+        "home": {
           "sm": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/SurveyMonkeySmallScreen.png?raw=true",
           "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true",
           "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
+        },
+        "secondPage": {
+          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
+        },
+        "otherPages": {
+          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true"
         }
       }
     },
@@ -58,10 +70,16 @@
         "deploy_link": "https://slow-argument-2201.netlify.app/"
       },
       "screenshots": {
-        "surveyMonkey": {
+        "home": {
           "sm": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/SurveyMonkeySmallScreen.png?raw=true",
           "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true",
           "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
+        },
+        "secondPage": {
+          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
+        },
+        "otherPages": {
+          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true"
         }
       }
     }

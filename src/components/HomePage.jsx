@@ -34,7 +34,7 @@ function HomePage() {
     <>
       <Navbar />
       <ConnectLinks linksDir={linksDir} linksposition={linksposition} />
-      <FIrstFullPageAnimation />
+      {/* <FIrstFullPageAnimation /> */}
       <Intro />
       <AllProjects />
     </>

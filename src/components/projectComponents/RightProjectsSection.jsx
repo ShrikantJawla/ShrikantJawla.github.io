@@ -1,10 +1,23 @@
-import { HStack, Image, useBreakpointValue, VStack } from '@chakra-ui/react'
+import {
+  Box,
+  HStack,
+  Image,
+  useBreakpointValue,
+  VStack,
+} from '@chakra-ui/react'
 import React from 'react'
 import styled from 'styled-components'
 import { FaGithub } from 'react-icons/fa'
 import { TbExternalLink } from 'react-icons/tb'
 
-function RightProjectsSection({ title, skills, links, description, image }) {
+function RightProjectsSection({
+  title,
+  skills,
+  links,
+  description,
+  image,
+  screenShots,
+}) {
   const classChange = useBreakpointValue(
     {
       base: 'fistProject_smallScreen',
@@ -30,7 +43,12 @@ function RightProjectsSection({ title, skills, links, description, image }) {
         borderTopRightRadius={{ base: '15', lg: 0 }}
       >
         <HStack id="imageSection">
-          <Image src={image} />
+          <Box id="firstImageBox">
+            <Image src={screenShots.lg} />
+          </Box>
+          <Box id="secondImageBox">
+            <Image src={screenShots.md} />
+          </Box>
         </HStack>
         <VStack id="content__Section">
           <div id="title">
@@ -68,19 +86,62 @@ const StyledVStack = styled(VStack)`
     min-height: 450px;
     position: relative;
     #imageSection {
-      object-fit: contain;
-      width: 40%;
+      width: 44%;
       height: 300px;
       position: absolute;
-      left: 5%;
+      left: 2%;
       top: 15%;
-      img {
-        width: 100%;
-        height: 100%;
+      border: 4px solid gray;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+      #firstImageBox {
+        position: relative;
+        top: 10%;
+        left: 1%;
+        width: 260px;
+        height: 300px;
+        overflow: auto;
+        border-radius: 10px;
         transition: all 0.5s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        &::-webkit-scrollbar {
+          display: none;
+        }
         &:hover {
-          scale: 1.1;
+          scale: 1.08;
+          cursor: all-scroll;
           z-index: 2;
+          box-shadow: rgba(240, 208, 46, 0.515) -5px 5px,
+            rgba(227, 240, 46, 0.3) -10px 10px,
+            rgba(166, 240, 46, 0.2) -12px 12px, rgba(12, 9, 11, 0.1) -12px 12px,
+            rgba(240, 46, 170, 0.05) -17px 17px;
+        }
+      }
+      #secondImageBox {
+        position: relative;
+        top: -10%;
+        right: -1%;
+        width: 260px;
+        height: 300px;
+        overflow: auto;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        &:hover {
+          scale: 1.08;
+          cursor: all-scroll;
+          z-index: 2;
+          box-shadow: rgba(240, 208, 46, 0.515) 5px 5px,
+            rgba(227, 240, 46, 0.3) 10px 10px, rgba(166, 240, 46, 0.2) 12px 12px,
+            rgba(12, 9, 11, 0.1) 12px 12px, rgba(240, 46, 170, 0.05) 17px 17px;
         }
       }
     }
@@ -144,11 +205,36 @@ const StyledVStack = styled(VStack)`
       right: 0;
       width: 100%;
       height: 100%;
-      img {
-        width: 100%;
-        height: 100%;
-        opacity: 0.3;
-        /* filter: grayscale(0.5); */
+      #firstImageBox {
+        position: relative;
+        top: 4%;
+        left: 1%;
+        width: 260px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+        opacity: 0.1;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      #secondImageBox {
+        position: relative;
+        top: -10%;
+        right: -1%;
+        width: 260px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+        opacity: 0.1;
+        transition: all 0.5s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
     }
     #content__Section {
@@ -197,5 +283,11 @@ const StyledVStack = styled(VStack)`
         }
       }
     }
+  }
+`
+
+const StyledBox = styled(Box)`
+  &::-webkit-scrollbar {
+    display: none;
   }
 `

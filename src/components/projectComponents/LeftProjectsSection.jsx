@@ -75,7 +75,11 @@ const StyledVStack = styled(VStack)`
       position: absolute;
       right: 5%;
       top: 15%;
+      border:4px solid gray;
       img {
+        position: relative;
+        top:-5%;
+        left:5%;
         width: 100%;
         height: 100%;
         transition: all 0.5s ease-in-out;
