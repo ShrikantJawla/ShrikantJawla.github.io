@@ -18,15 +18,15 @@
       },
       "screenshots": {
         "home": {
-          "sm": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/SurveyMonkeySmallScreen.png?raw=true",
-          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true",
-          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/zoomcarHomePageFullSS.png?raw=true"
+          "sm": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/zoomCar/zoomCarHomePagesmallSS.png?raw=true",
+          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/zoomCar/zoomCarHOmePagemediumScreenSS.png?raw=true",
+          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/zoomCar/zoomcarHomePageFullSS.png?raw=true"
         },
         "secondPage": {
-          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/ZpomCarHostPage.png?raw=true"
+          "lg": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/zoomCar/hostPageFullLargeSS.png?raw=true"
         },
         "otherPages": {
-          "md": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyMediumScreeenSS.png?raw=true"
+          "md": ""
         }
       }
     },

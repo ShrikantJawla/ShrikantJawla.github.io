@@ -44,10 +44,10 @@ function RightProjectsSection({
       >
         <HStack id="imageSection">
           <Box id="firstImageBox">
-            <Image src={screenShots.lg} />
+            <Image src={screenShots.home.lg} />
           </Box>
           <Box id="secondImageBox">
-            <Image src={screenShots.md} />
+            <Image src={screenShots.secondPage.lg} />
           </Box>
         </HStack>
         <VStack id="content__Section">

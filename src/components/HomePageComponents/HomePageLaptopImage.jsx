@@ -12,7 +12,7 @@ function HomePageLaptopImage() {
       justifyContent="center"
     >
       <Box w={{base:'350px',lg:"450px"}} h={{base:'200px',lg:"270px"}} position="relative">
-        <Image w="full" h="full" src="/images/mac-laptop-png-13.png" />
+        <Image w="full" h="full" src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/others/mac-laptop-png-13.png?raw=true" />
         <StyledBox
           pos="absolute"
           top="8.9%"
@@ -23,7 +23,7 @@ function HomePageLaptopImage() {
         >
           <Image
             w="full"
-            src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
+            src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/tesla/teslaHomePageLargeSS.png?raw=true"
           />
         </StyledBox>
       </Box>

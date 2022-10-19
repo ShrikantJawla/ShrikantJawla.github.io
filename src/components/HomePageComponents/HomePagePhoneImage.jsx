@@ -12,7 +12,7 @@ function HomePagePhoneImage() {
       justifyContent="center"
     >
       <Box w="240px" h={{ base: '280px', lg: '330px' }} position="relative">
-        <Image w="full" h="full" src="/images/mobile-hands-vector-png-2.png" />
+        <Image w="full" h="full" src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/others/mobile-hands-vector-png-2.png?raw=true" />
         <StyledBox
           pos="absolute"
           top="4.3%"
@@ -24,7 +24,7 @@ function HomePagePhoneImage() {
         >
           <Image
             w="full"
-            src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/SurveyMonkeySmallScreen.png?raw=true"
+            src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/tesla/teslasmallScreenSS.png?raw=true"
           />
         </StyledBox>
       </Box>
