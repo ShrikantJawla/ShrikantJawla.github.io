@@ -32,9 +32,10 @@ function Intro() {
       alignItems="center"
       textAlign="left"
       bg={bgColor}
-      p="5"
+      p={{base:'1',lg:"5"}}
       w="full"
       h="100vh"
+      overflow='hidden'
       spacing={5}
       mt={{ base: '25px', md: 0 }}
       pt={{ lg: '90px' }}
@@ -65,9 +66,10 @@ function Intro() {
         </Box>
       </VStack>
       <HStack
-        w={{ base: 'full', lg: '45%' }}
+        w={{ base: 'full', lg: '540px' }}
         pos="relative"
         h={{ base: '300px', lg: '400px' }}
+        // overflow="hidden"
       >
         <Box
           pos="absolute"
@@ -87,7 +89,7 @@ function Intro() {
           variants={scrollIconVariant}
           animate="visible"
           pos="absolute"
-          right={{ base: '40%', md: '44%', lg: '42%' }}
+          right={{ base: '40%', md: '44%', lg: '45%' }}
           top={{ base: '30%', lg: '12%' }}
         >
           <CgScrollV size="35px" />
@@ -96,8 +98,8 @@ function Intro() {
           variants={scrollIconVariant}
           animate="visible"
           pos="absolute"
-          right={{ base: '0%', md: '25%', lg: '22%' }}
-          top="38%"
+          right={{ base: '2%', md: '25%', lg: '26%' }}
+          top="34%"
         >
           <CgScrollV size="35px" />
         </MotionBox>

@@ -87,7 +87,7 @@ function FIrstFullPageAnimation() {
                   top="22%"
                   w={{base:'240px',md:"280px"}}
                   h={{base:'220px',md:"260px"}}
-                  src="/images/tesla.png"
+                  src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/tesla.png?raw=true"
                   zIndex="1"
                   whileHover={{ scale: 1.1, cursor: 'pointer', zIndex: 2 }}
                   transition={{ duration: 0.5 }}
@@ -101,7 +101,7 @@ function FIrstFullPageAnimation() {
                   h="150px"
                   top="28%"
                   right={{base:'-9%',md:'15%',lg:"-25"}}
-                  src="/images/sm1.png"
+                  src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/sm1.png?raw=true"
                   zIndex="1"
                   whileHover={{ scale: 1.1, cursor: 'pointer' }}
                   transition={{ duration: 0.5 }}
@@ -115,7 +115,7 @@ function FIrstFullPageAnimation() {
                   top={{base:'50%',lg:"57%"}}
                   left={{base:'-7%',md:'15%',lg:"12"}}
                   h="150px"
-                  src="/images/sm2.png"
+                  src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/sm2.png?raw=true"
                   zIndex="1"
                   whileHover={{ scale: 1.1, cursor: 'pointer' }}
                   transition={{ duration: 0.5 }}
@@ -131,7 +131,7 @@ function FIrstFullPageAnimation() {
                   top="13%"
                   left={{base:'-7%',md:'13%',lg:"10"}}
                   h="150px"
-                  src="/images/sm3.png"
+                  src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/sm3.png?raw=true"
                 />
               </MotionDiv>
             </MotionStack>

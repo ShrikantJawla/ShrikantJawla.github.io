@@ -4,6 +4,7 @@ import Intro from './HomePageComponents/Intro'
 import Navbar from './Navbar'
 import { useScroll } from 'framer-motion'
 import ConnectLinks from './HomePageComponents/ConnectLinks'
+import AllProjects from './projectComponents/AllProjects'
 
 const bgColor = '#fefffe'
 const footerColor = '#f4f5f6'
@@ -35,7 +36,7 @@ function HomePage() {
       <ConnectLinks linksDir={linksDir} linksposition={linksposition} />
       <FIrstFullPageAnimation />
       <Intro />
-      <Intro />
+      <AllProjects />
     </>
   )
 }

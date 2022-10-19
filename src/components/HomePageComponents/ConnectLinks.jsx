@@ -1,4 +1,4 @@
-import { Box, } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import React from 'react'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { SiLeetcode } from 'react-icons/si'
@@ -18,9 +18,9 @@ function ConnectLinks({ linksDir, linksposition }) {
       alignItems="center"
       justifyContent="center"
     >
-      <AiFillGithub id="github" size="20px" />
-      <AiFillLinkedin id="linkedIn" size="20px" />
-      <SiLeetcode id="leetCode" size="20px" />
+      <AiFillGithub id="github" />
+      <AiFillLinkedin id="linkedIn" />
+      <SiLeetcode id="leetCode" />
     </StyledBox>
   )
 }
@@ -33,9 +33,14 @@ const StyledBox = styled(Box)`
   #github,
   #linkedIn,
   #leetCode {
+    font-size: 24px;
+    @media screen and (max-width: 768px) {
+      font-size: 19px;
+    }
     transition: all 0.4s ease-in-out;
     &:hover {
       cursor: pointer;
+      color: red;
       scale: 1.4;
     }
   }

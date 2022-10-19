@@ -1,0 +1,48 @@
+{
+  "projects": [
+    {
+      "title": "Zoom Car Clone",
+      "image": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/zoomCarHomePage.jpg?raw=true",
+      "description": "Cloned some parts of Zoom-car website which is an Indian car sharing platform, headquartered in Bangalore. founded in 2013 by David Back and Greg Moran.",
+      "skills": [
+        "React",
+        "Styled-Components",
+        "Chakra-UI",
+        "Framer-motion",
+        "Firebase",
+        "Vercel"
+      ],
+      "links": {
+        "github": "https://github.com/ShrikantJawla/slow-argument-2201",
+        "deploy_link": "https://zoomcar-clone-five.vercel.app/"
+      }
+    },
+    {
+      "title": "Tesla",
+      "image": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/tesla.png?raw=true",
+      "description": "Cloned some parts of Tesla website which is an automotive and energy company. It designs, develops, manufactures, sells, and leases electric vehicles and energy generation and storage systems.",
+      "skills": [
+        "React",
+        "Styled-Components",
+        "Chakra-UI",
+        "React-reveal",
+        "Firebase",
+        "Vercel"
+      ],
+      "links": {
+        "github": "https://github.com/ShrikantJawla/Tesla-Clone",
+        "deploy_link": "https://shrikant-tesla-clone.vercel.app/"
+      }
+    },
+    {
+      "title": "Survey-Monkey-clone",
+      "image": "https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/sm1.png?raw=true",
+      "description": "Clone of a well-known website that let users to create, send and analyze sophisticated survey templates.",
+      "skills": ["HTML", "CSS", "JavaScript", "LocalStorage", "Netlify"],
+      "links": {
+        "github": "https://github.com/ShrikantJawla/slow-argument-2201",
+        "deploy_link": "https://slow-argument-2201.netlify.app/"
+      }
+    }
+  ]
+}
