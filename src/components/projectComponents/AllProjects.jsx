@@ -1,6 +1,6 @@
 import { Text, VStack } from '@chakra-ui/react'
 import React from 'react'
-import data from '../../projectsDetails.json'
+import data from '../../DataBase/projectsDetails.json'
 import RightProjectsSection from './RightProjectsSection'
 import LeftProjectsSection from './LeftProjectsSection'
 

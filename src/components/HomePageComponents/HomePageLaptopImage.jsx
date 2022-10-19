@@ -23,7 +23,7 @@ function HomePageLaptopImage() {
         >
           <Image
             w="full"
-            src="/images/FireShot Capture 001 - Apple (India) - www.apple.com.png"
+            src="https://github.com/ShrikantJawla/ShrikantJawla.github.io/blob/main/public/images/surveyMonkeyHomeFullScreenhot.png?raw=true"
           />
         </StyledBox>
       </Box>
