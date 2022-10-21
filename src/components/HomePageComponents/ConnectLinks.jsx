@@ -18,9 +18,15 @@ function ConnectLinks({ linksDir, linksposition }) {
       alignItems="center"
       justifyContent="center"
     >
-      <AiFillGithub id="github" />
-      <AiFillLinkedin id="linkedIn" />
-      <SiLeetcode id="leetCode" />
+      <a href="https://github.com/ShrikantJawla" target="blank">
+        <AiFillGithub id="github" />
+      </a>
+      <a href="https://www.linkedin.com/in/shrikant-jawla/" target="blank">
+        <AiFillLinkedin id="linkedIn" />
+      </a>
+      <a href="https://leetcode.com/shrikantjawla/" target="blank">
+        <SiLeetcode id="leetCode" />
+      </a>
     </StyledBox>
   )
 }

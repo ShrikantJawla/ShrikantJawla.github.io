@@ -31,7 +31,7 @@ function Navbar() {
   })
 
   return (
-    <MotionBox
+    <StyledMotionBox
       // bg="#303032"
       style={{ backgroundColor: newBg, color: newfontcolor }}
       h="70px"
@@ -47,36 +47,52 @@ function Navbar() {
       initial="hidden"
       animate="visible"
     >
-      <NameStyledStack spacing={3} pl={{base:'1',lg:"10"}}>
-        <Text fontFamily="Oswald" fontSize={25}>
-          Shrikant Jawla
-        </Text>
+      <NameStyledStack spacing={3} pl={{ base: '1', lg: '10' }}>
+        <a href="https://shrikantjawla.vercel.app/">
+          <Text fontFamily="Oswald" fontSize={25}>
+            Shrikant Jawla
+          </Text>
+        </a>
       </NameStyledStack>
       <Spacer />
       <HStack display={{ base: 'none', lg: 'flex' }} spacing={5}>
         <StyledHStack spacing={1} hoverColor={hoverColor}>
           <AiFillHome />
-          <MyText>ABOUT</MyText>
+          <a href="#aboutMePage">
+            <MyText>ABOUT</MyText>
+          </a>
         </StyledHStack>
         <StyledHStack spacing={1} hoverColor={hoverColor}>
           <IoIosCodeWorking size="20px" />
-          <MyText>SKILLS</MyText>
+          <a href="#all-skills">
+            <MyText>SKILLS</MyText>
+          </a>
         </StyledHStack>
         <StyledHStack spacing={1} hoverColor={hoverColor}>
           <AiFillProject />
-          <MyText>PROJECTS</MyText>
+          <a href="#all-projects">
+            <MyText>PROJECTS</MyText>
+          </a>
         </StyledHStack>
         <StyledHStack spacing={1} hoverColor={hoverColor}>
           <IoCall />
-          <MyText>CONTACT</MyText>
+          <a href="#my-contacts">
+            <MyText>CONTACT</MyText>
+          </a>
         </StyledHStack>
       </HStack>
       <StyledMenu />
-    </MotionBox>
+    </StyledMotionBox>
   )
 }
 
 export default Navbar
+
+const StyledMotionBox = styled(MotionBox)`
+  a {
+    transition: all 0.8s ease-in-out;
+  }
+`
 
 const MyText = styled(motion.p)`
   font-weight: 500;

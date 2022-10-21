@@ -1,21 +1,16 @@
-import { Text, VStack } from '@chakra-ui/react'
+import { Heading, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import data from '../../DataBase/projectsDetails.json'
 import RightProjectsSection from './RightProjectsSection'
 import LeftProjectsSection from './LeftProjectsSection'
+import styled from 'styled-components'
 
 function AllProjects() {
   return (
-    <VStack w="full" bg="#f4f5f6" pt="10" overflow="hidden">
-      <Text
-        w="full"
-        textAlign="center"
-        fontSize={30}
-        fontWeight="bold"
-        color="red"
-      >
+    <VStack id="all-projects" w="full" bg="#e8e8e8" pt="90px" overflow="hidden">
+      <StyledHeading w="full" textAlign="center">
         Some of the things I've built
-      </Text>
+      </StyledHeading>
       {data.projects.map((project, ind) =>
         ind % 2 === 0 ? (
           <RightProjectsSection
@@ -42,3 +37,10 @@ function AllProjects() {
 }
 
 export default AllProjects
+
+const StyledHeading = styled(Heading)`
+  color: red;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 40px;
+`

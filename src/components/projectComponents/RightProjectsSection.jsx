@@ -31,7 +31,7 @@ function RightProjectsSection({
   )
 
   return (
-    <StyledVStack w="full" py="9" h={{ base: 'auto', lg: '100vh' }}>
+    <StyledVStack w="full" py="9" h={{ base: 'auto', lg: 'auto' }}>
       <HStack
         id={classChange}
         w={{ base: '99%', lg: '90%' }}
@@ -119,6 +119,10 @@ const StyledVStack = styled(VStack)`
             rgba(166, 240, 46, 0.2) -12px 12px, rgba(12, 9, 11, 0.1) -12px 12px,
             rgba(240, 46, 170, 0.05) -17px 17px;
         }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          width: 260px;
+          height: 210px;
+        }
       }
       #secondImageBox {
         position: relative;
@@ -132,6 +136,10 @@ const StyledVStack = styled(VStack)`
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
           rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
           rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          width: 260px;
+          height: 210px;
+        }
         &::-webkit-scrollbar {
           display: none;
         }
@@ -170,6 +178,9 @@ const StyledVStack = styled(VStack)`
           font-size: 13px;
           cursor: pointer;
           transition: all 0.5s ease-in-out;
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            font-size: 10px;
+          }
           &:hover {
             scale: 1.05;
             color: red;

@@ -19,7 +19,7 @@ function LeftProjectsSection({ title, skills, links, description, image }) {
   )
 
   return (
-    <StyledVStack w="full" py="9" h={{ base: 'auto', lg: '100vh' }}>
+    <StyledVStack w="full" py="9" h={{ base: 'auto', lg: 'auto' }}>
       <HStack
         id={classChange}
         w={{ base: '99%', lg: '90%' }}
@@ -75,11 +75,11 @@ const StyledVStack = styled(VStack)`
       position: absolute;
       right: 5%;
       top: 15%;
-      border:4px solid gray;
+      border: 4px solid gray;
       img {
         position: relative;
-        top:-5%;
-        left:5%;
+        top: -5%;
+        left: 5%;
         width: 100%;
         height: 100%;
         transition: all 0.5s ease-in-out;
@@ -114,6 +114,9 @@ const StyledVStack = styled(VStack)`
           font-size: 13px;
           cursor: pointer;
           transition: all 0.5s ease-in-out;
+          @media screen and (min-width: 768px) and (max-width: 992px) {
+            font-size: 11px;
+          }
           &:hover {
             scale: 1.05;
             color: red;

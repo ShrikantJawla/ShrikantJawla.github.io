@@ -1,10 +1,12 @@
 import React from 'react'
-import FIrstFullPageAnimation from './FIrstFullPageAnimation'
-import Intro from './HomePageComponents/Intro'
 import Navbar from './Navbar'
 import { useScroll } from 'framer-motion'
 import ConnectLinks from './HomePageComponents/ConnectLinks'
 import AllProjects from './projectComponents/AllProjects'
+import LandingPage from './HomePageComponents/LandingPage'
+import AboutMe from './HomePageComponents/AboutMe'
+import ContactMe from './ContactMe'
+import Skills from './Skills'
 
 const bgColor = '#fefffe'
 const footerColor = '#f4f5f6'
@@ -34,9 +36,11 @@ function HomePage() {
     <>
       <Navbar />
       <ConnectLinks linksDir={linksDir} linksposition={linksposition} />
-      {/* <FIrstFullPageAnimation /> */}
-      <Intro />
+      <LandingPage />
+      <AboutMe />
+      <Skills />
       <AllProjects />
+      <ContactMe />
     </>
   )
 }
