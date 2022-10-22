@@ -1,8 +1,10 @@
-import { Box, Heading, Text } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
 import styled from 'styled-components'
 import React from 'react'
 import SkillIcons from './HomePageComponents/SkillsIcon'
 import SoftSkills from './SoftSkills'
+import GithubCalender from './GithubCalender'
+import GithubStats from './GithubStats'
 
 function Skills() {
   return (
@@ -15,6 +17,8 @@ function Skills() {
         <Heading>Soft Skills</Heading>
       </Box>
       <SoftSkills />
+      <GithubCalender />
+      <GithubStats />
     </Wrapper>
   )
 }

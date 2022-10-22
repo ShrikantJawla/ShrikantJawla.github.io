@@ -5,8 +5,8 @@ import React from 'react'
 import { IoMdMenu, IoIosCodeWorking } from 'react-icons/io'
 import { AiFillHome, AiFillProject } from 'react-icons/ai'
 import { IoCall } from 'react-icons/io5'
+import { RiFileList3Line } from 'react-icons/ri'
 import { useScroll } from 'framer-motion'
-import ConnectLinks from './HomePageComponents/ConnectLinks'
 
 const MotionBox = motion(Box)
 const MotionHStack = motion(HStack)
@@ -48,7 +48,7 @@ function Navbar() {
       animate="visible"
     >
       <NameStyledStack spacing={3} pl={{ base: '1', lg: '10' }}>
-        <a href="https://shrikantjawla.vercel.app/">
+        <a href="https://shrikantjawla.github.io">
           <Text fontFamily="Oswald" fontSize={25}>
             Shrikant Jawla
           </Text>
@@ -78,6 +78,12 @@ function Navbar() {
           <IoCall />
           <a href="#my-contacts">
             <MyText>CONTACT</MyText>
+          </a>
+        </StyledHStack>
+        <StyledHStack spacing={1} hoverColor={hoverColor}>
+          <RiFileList3Line />
+          <a href="https://drive.google.com/drive/my-drive" download='Shrikant_Jawla_Resume'>
+            <MyText>RESUME</MyText>
           </a>
         </StyledHStack>
       </HStack>
