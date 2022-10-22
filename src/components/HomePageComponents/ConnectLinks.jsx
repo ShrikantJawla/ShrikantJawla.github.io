@@ -34,7 +34,7 @@ function ConnectLinks({ linksDir, linksposition }) {
 export default ConnectLinks
 
 const StyledBox = styled(Box)`
-  z-index: 100000;
+  z-index: 999;
   transition: all 0.7s ease-in-out;
   #github,
   #linkedIn,

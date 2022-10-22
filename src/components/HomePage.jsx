@@ -8,9 +8,6 @@ import AboutMe from './HomePageComponents/AboutMe'
 import ContactMe from './ContactMe'
 import Skills from './Skills'
 
-const bgColor = '#fefffe'
-const footerColor = '#f4f5f6'
-const secondbgColor = '#f4f5f6'
 
 function HomePage() {
   const { scrollY } = useScroll()

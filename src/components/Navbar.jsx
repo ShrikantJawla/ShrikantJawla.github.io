@@ -2,11 +2,12 @@ import { Box, HStack, Spacer, Text } from '@chakra-ui/react'
 import styled from 'styled-components'
 import { motion, useTransform } from 'framer-motion'
 import React from 'react'
-import { IoMdMenu, IoIosCodeWorking } from 'react-icons/io'
+import { IoIosCodeWorking } from 'react-icons/io'
 import { AiFillHome, AiFillProject } from 'react-icons/ai'
 import { IoCall } from 'react-icons/io5'
 import { RiFileList3Line } from 'react-icons/ri'
 import { useScroll } from 'framer-motion'
+import SideNav from './HomePageComponents/SideNav'
 
 const MotionBox = motion(Box)
 const MotionHStack = motion(HStack)
@@ -32,14 +33,13 @@ function Navbar() {
 
   return (
     <StyledMotionBox
-      // bg="#303032"
       style={{ backgroundColor: newBg, color: newfontcolor }}
       h="70px"
       pos="fixed"
       top="0"
       left="0"
       right="0"
-      zIndex="99999"
+      zIndex="998"
       display="flex"
       alignItems="center"
       px="23px"
@@ -82,12 +82,15 @@ function Navbar() {
         </StyledHStack>
         <StyledHStack spacing={1} hoverColor={hoverColor}>
           <RiFileList3Line />
-          <a href="https://drive.google.com/drive/my-drive" download='Shrikant_Jawla_Resume'>
+          <a
+            href="https://github.com/ShrikantJawla/ShrikantJawla.github.io/raw/main/Resume/Shrikant_Jawla_resume.pdf"
+            download="Shrikant_Jawla_Resume"
+          >
             <MyText>RESUME</MyText>
           </a>
         </StyledHStack>
       </HStack>
-      <StyledMenu />
+      <SideNav />
     </StyledMotionBox>
   )
 }
@@ -122,20 +125,6 @@ const StyledHStack = styled(HStack)`
       hoverColor ? 'transparent' : 'black'};
     cursor: pointer;
     scale: 1.05;
-  }
-`
-
-const StyledMenu = styled(IoMdMenu)`
-  font-size: 20px;
-  transition: all 0.4s ease-in-out;
-  color: #d6d6d6;
-  &:hover {
-    background-color: black;
-    cursor: pointer;
-    scale: 1.05;
-  }
-  @media screen and (min-width: 992px) {
-    display: none;
   }
 `
 

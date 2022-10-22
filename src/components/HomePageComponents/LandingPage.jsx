@@ -51,7 +51,10 @@ function LandingPage() {
             I build things for the web.
           </Text>
           <HStack w="full">
-            <a href="" download>
+            <a
+              href="https://github.com/ShrikantJawla/ShrikantJawla.github.io/raw/main/Resume/Shrikant_Jawla_resume.pdf"
+              download="Shrikant_Jawla_Resume"
+            >
               <MotionButton
                 style={{ marginTop: '20px' }}
                 bg="#008080"
