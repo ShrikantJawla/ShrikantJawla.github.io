@@ -58,13 +58,16 @@ const ProjectCard = ({
           <p className="text-[20px] font-[800] underline text-red-600 mt-[10px] font-poppins">
             {title}
           </p>
-          <p className="text-[12px] md:text-[14px] text-white font-serif w-full h-[65px] scollbar_y_small overflow-y-auto ">
+          <p className="text-[12px] md:text-[14px] lg:text-[15px] text-white font-serif w-full h-[65px] scollbar_y_small overflow-y-auto ">
             {aboutText}
           </p>
         </div>
 
         {/* Tech Stacks */}
-        <div className="w-[95%] m-[auto] flex justify-center gap-[7px] text-gray-200 text-[14px] mb-4 flex-wrap">
+        <p className="text-[16px] font-[600] text-red-500 mt-[10px] font-poppins px-2">
+          Tech Stacks
+        </p>
+        <div className="w-[95%] m-[auto] flex justify-start gap-[7px] text-gray-200 text-[14px] mb-4 flex-wrap">
           {techStacks.map((ele, i) => (
             <p>{ele}</p>
           ))}
