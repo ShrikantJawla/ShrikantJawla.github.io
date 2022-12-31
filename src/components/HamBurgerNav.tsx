@@ -24,7 +24,10 @@ const HamBurgerNav = () => {
           </div>
           <div className="flex flex-col h-[90%] gap-5 items-center">
             {navLinks.map((item, ind) => (
-              <button className="nav_btn font-[FiraCode] uppercase" key={ind}>
+              <button
+                className="nav_btn font-[FiraCode] uppercase text-white"
+                key={ind}
+              >
                 {item}
               </button>
             ))}

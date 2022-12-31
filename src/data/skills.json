@@ -17,7 +17,7 @@
   {
     "title": "React",
     "category": "fe",
-    "img": "https://cdn-icons-png.flaticon.com/128/3393/3393920.png"
+    "img": "/icons8-react.svg"
   },
   {
     "title": "Redux",
@@ -42,7 +42,7 @@
   {
     "title": "ExpressJS",
     "category": "be",
-    "img": "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png"
+    "img": "/icons8-express-js.svg"
   },
   {
     "title": "FramerMotion",

@@ -4,7 +4,7 @@ import GithubStats from './GithubStats'
 
 const Stats = () => {
   return (
-    <div className="w-full h-fit md:h-[280vh] lg:h-[180vh] bg-[#15191f] pt-[100px] lg:pt-[90px] ">
+    <div className="w-full h-fit md:h-[280vh] lg:h-[190vh] bg-[#15191f] pt-[100px] lg:pt-[90px] ">
       <div className="w-full flex flex-col items-center gap-[10px]">
         {/* Github Calender */}
         <GithubCalender />
