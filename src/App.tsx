@@ -25,7 +25,7 @@ function App() {
       <HomeSection />
       <Skills />
       <Stats />
-      <Projects updateIsOpen={()=>setIsOpen(!isOpen) } />
+      <Projects updateIsOpen={() => setIsOpen(!isOpen)} />
       <ContactSection />
       <ImageModel isOpen={isOpen} updateIsOpen={() => setIsOpen(!isOpen)} />
     </>

@@ -12,7 +12,7 @@ const ImageModel = ({ isOpen, updateIsOpen }: Props) => {
   return (
     <>
       {isOpen && (
-        <div className="w-full lg:w-[80%] h-[80vh] fixed top-[16%] left-[50%] translate-x-[-50%] shadow-lg bg-white z-[19] border-[5px] border-[#0d1116]">
+        <div className="w-full lg:w-[80%] h-[80vh] fixed top-[12%] left-[50%] translate-x-[-50%] shadow-lg bg-white z-[19] border-[5px] border-[#0d1116]">
           <div className="relative">
             <CgClose
               onClick={() => updateIsOpen()}

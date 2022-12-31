@@ -15,7 +15,7 @@ const HomeSection = () => {
             <p className="text-gray-400 font-[FiraCode] text-[17px] mt-[8px] ml-1">
               Aspiring Software Developer equipped with problem-solving and
               user-centric attitude. Has a deep interest in IT and is capable of
-              writing code in React, Redux, HTML, and CSS, on the front end,
+              writing code in NextJS, React, Redux, HTML, and CSS, on the front end,
               Node JS and Express Js on the backend. A team player and intensely
               interested in obtaining a software developer position to work on
               enhancing the product experience.

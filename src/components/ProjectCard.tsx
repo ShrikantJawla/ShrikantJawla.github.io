@@ -29,7 +29,7 @@ const ProjectCard = ({
   const dispatch = useDispatch()
   const { image } = useSelector((s: State) => s.displayModel)
   return (
-    <div className="w-[94%] sm:w-[78%] lg:w-[93%] h-[680px] shadow-lg bg-[#141e2f] pb-10 m-[auto]">
+    <div className="w-[94%] sm:w-[78%] lg:w-[93%] h-[700px] shadow-lg bg-[#141e2f] pb-10 m-[auto]">
       <div className="w-full overflow-hidden">
         <img
           className="w-full h-[290px] hover:scale-[1.1] transition duration-4000 ease-in-out cursor-pointer object-cover"
