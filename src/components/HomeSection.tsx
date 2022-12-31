@@ -1,7 +1,7 @@
 
 const HomeSection = () => {
   return (
-    <div id="about__part" className="w-full h-[150vh] md:h-[100vh] bg-[#0d1116] pt-[100px] lg:pt-[90px] ">
+    <div id="about__part" className="w-full h-[150vh] md:h-[100vh] bg-[#040506] pt-[100px] lg:pt-[90px] ">
       <div className="w-[85%]  h-[70vh] m-[auto] flex flex-col md:flex-row">
         <div className="md:w-[60%] flex flex-col p-[5px] justify-center items-center">
           <div className="md:w-[70%] flex flex-col">

@@ -10,7 +10,7 @@ const Projects = ({ updateIsOpen }: Project) => {
   return (
     <div
       id="project__part"
-      className="w-full h-[600vh] md:h-[320vh] lg:h-[330vh] xl:h-[300vh] bg-[#0d1116] pt-[80px] lg:pt-[80px] "
+      className="w-full h-[600vh] md:h-[320vh] lg:h-[330vh] xl:h-[300vh] bg-[#0f1216] pt-[80px] lg:pt-[80px] "
     >
       {/* Title */}
       <div className="w-[95%] lg:w-[60%] m-[auto] flex justify-start items-center gap-[10px] mb-[65px]">
