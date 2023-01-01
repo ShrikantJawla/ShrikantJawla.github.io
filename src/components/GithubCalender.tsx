@@ -2,12 +2,18 @@ import React, { useEffect, useState } from 'react'
 import GitHubCalendar from 'react-github-calendar'
 import ReactToolTip from 'react-tooltip'
 
-const selectLastHalfYear = (contributions:any) => {
+interface Day {
+  date: string
+  count: number
+  level: 0 | 1 | 2 | 3 | 4
+}
+
+const selectLastHalfYear = (contributions: any) => {
   const currentYear = new Date().getFullYear()
   const currentMonth = new Date().getMonth()
   const shownMonths = 6
 
-  return contributions.filter((day:any) => {
+  return contributions.filter((day: Day) => {
     const date = new Date(day.date)
     const monthOfDay = date.getMonth()
 

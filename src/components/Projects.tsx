@@ -20,12 +20,12 @@ const Projects = ({ updateIsOpen }: Project) => {
         <div className="h-[1px] w-[270px] md:w-[340px] bg-gray-800" />
       </div>
       {/* Project Cards */}
-      <div className="md:w-[98%] lg:w-[72%] m-[auto] grid-cols-1 grid md:grid-cols-2 justify-center items-center gap-y-12">
+      <div className="md:w-[98%] lg:w-[90%] m-[auto] grid-cols-1 grid md:grid-cols-2 justify-center items-center gap-y-12">
         {ProjectsData.map((ele, i) => (
           <ProjectCard
             {...ele}
             updateIsOpen={updateIsOpen}
-            key={ele.screenShots[0]}
+            key={`${ele.links.github}`}
           />
         ))}
       </div>

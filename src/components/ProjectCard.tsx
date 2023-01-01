@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { State } from '../redux/store'
 import { getSingleImageToDisplay } from './../redux/actions'
+import { v4 as uuidv4 } from 'uuid'
 
 type LinksType = {
   github: string
@@ -29,7 +30,7 @@ const ProjectCard = ({
   const dispatch = useDispatch()
   const { image } = useSelector((s: State) => s.displayModel)
   return (
-    <div className="w-[94%] sm:w-[78%] lg:w-[93%] h-[700px] shadow-xl bg-[#141e2f] pb-10 m-[auto]">
+    <div className="w-[94%] sm:w-[85%] lg:w-[86%] h-[700px] shadow-xl bg-[#141e2f] pb-10 m-[auto]">
       <div className="w-full overflow-hidden">
         <img
           className="w-full h-[290px] hover:scale-[1.1] transition duration-4000 ease-in-out cursor-pointer object-cover"
@@ -39,13 +40,13 @@ const ProjectCard = ({
 
         {/* ScreenShots */}
         <div className="w-[99%] m-[auto] h-[95px] flex gap-2 my-2 mb-5 overflow-x-scroll overflow-y-hidden scollbar_small">
-          {screenShots.map((ele, i) => (
+          {screenShots.map((ele) => (
             <img
               onClick={() => {
                 dispatch(getSingleImageToDisplay(ele))
                 updateIsOpen()
               }}
-              key={ele}
+              key={uuidv4()}
               className="w-full h-full object-cover shadow-md cursor-pointer hover:scale-[1.09] transition duration-2000 ease-in-out select-none"
               src={ele}
               alt={'screenShots'}
@@ -69,7 +70,7 @@ const ProjectCard = ({
         </p>
         <div className="w-[95%] m-[auto] flex justify-center gap-[7px] text-gray-200 text-[14px] mb-4 flex-wrap">
           {techStacks.map((ele, i) => (
-            <p>{ele}</p>
+            <p key={uuidv4()}>{ele}</p>
           ))}
         </div>
 

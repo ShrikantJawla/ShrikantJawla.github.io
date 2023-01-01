@@ -5,6 +5,7 @@ import homeAnimation from '../93492-home-icon.json'
 import skillsAnimation from '../115663-skills.json'
 import projectsAnmation from '../91642-design-tools.json'
 import contactsAimation from '../85620-contact.json'
+import { v4 as uuidv4 } from 'uuid'
 
 const navLinksWithScrollMapping = [
   {
@@ -63,7 +64,10 @@ const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
       </div>
       <div className=" w-fit flex justify-center items-center space-x-3 ">
         {navLinksWithScrollMapping.map((item, ind) => (
-          <div className="w-[120px] hidden sm:flex space-x-0 flex justify-center items-center">
+          <div
+            key={uuidv4()}
+            className="w-[120px] hidden sm:flex space-x-0 flex justify-center items-center"
+          >
             {scrollPosition <= item.maxPos && scrollPosition >= item.minPos && (
               <div className="w-[120px] ">
                 <Lottie animationData={item.anim} />
@@ -76,7 +80,7 @@ const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
                 scrollPosition >= item.minPos &&
                 'text-red-500 font-extrabold'
               } font-[FiraCode] text-white text-[20px]`}
-              key={ind}
+              key={uuidv4()}
             >
               {item.name}
             </a>
