@@ -45,7 +45,7 @@ const GithubCalender = () => {
         <div className="h-[1px] w-[340px] bg-gray-800" />
       </div>
       <GitHubCalendar
-        style={{ color: 'white' }}
+        style={{ color: 'white', margin: 'auto' }}
         // transformData={selectLastHalfYear}
         blockSize={20}
         blockMargin={5}

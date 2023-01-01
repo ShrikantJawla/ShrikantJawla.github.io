@@ -8,7 +8,7 @@ const HomeSection = () => {
         <div className="md:w-[60%] flex flex-col p-[5px] justify-center items-center">
           <div className="md:w-[70%] flex flex-col">
             <p className="text-white font-[FiraCode] text-left ">Hello! I am</p>
-            <p className="font-serif text-white lg:text-[50px] font-bold ml-1">
+            <p className="font-serif text-white text-[32px] lg:text-[50px] font-bold ml-1">
               Shrikant Jawla
             </p>
             <p className="text-[#4D5BCE] font-[FiraCode] text-[19px] ml-1">
