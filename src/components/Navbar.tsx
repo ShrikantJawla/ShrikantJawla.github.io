@@ -1,10 +1,5 @@
 import { useEffect, useState } from 'react'
 import HamBurgerNav from './HamBurgerNav'
-import Lottie from 'lottie-react'
-import homeAnimation from '../93492-home-icon.json'
-import skillsAnimation from '../115663-skills.json'
-import projectsAnmation from '../91642-design-tools.json'
-import contactsAimation from '../85620-contact.json'
 import { v4 as uuidv4 } from 'uuid'
 
 const navLinksWithScrollMapping = [
@@ -13,28 +8,24 @@ const navLinksWithScrollMapping = [
     minPos: 0,
     maxPos: 599,
     link: 'about__part',
-    anim: homeAnimation,
   },
   {
     name: '_Skills',
     minPos: 600,
     maxPos: 2599,
     link: 'skills__part',
-    anim: skillsAnimation,
   },
   {
     name: '_Projects',
     minPos: 2600,
     maxPos: 3999,
     link: 'project__part',
-    anim: projectsAnmation,
   },
   {
     name: '_Contacts',
     minPos: 4000,
     maxPos: 9000,
     link: 'contact__part',
-    anim: contactsAimation,
   },
 ]
 
@@ -62,29 +53,19 @@ const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
           alt="logo"
         />
       </div>
-      <div className=" w-fit flex justify-center items-center space-x-3 ">
+      <div className=" w-fit flex justify-center items-center space-x-8 ">
         {navLinksWithScrollMapping.map((item, ind) => (
-          <div
+          <a
+            href={`#${item.link}`}
+            className={`nav_btn hidden sm:flex ${
+              scrollPosition <= item.maxPos &&
+              scrollPosition >= item.minPos &&
+              'text-red-500 font-extrabold'
+            } font-[FiraCode] text-white text-[20px]`}
             key={uuidv4()}
-            className="w-[120px] hidden sm:flex space-x-0 flex justify-center items-center"
           >
-            {scrollPosition <= item.maxPos && scrollPosition >= item.minPos && (
-              <div className="w-[120px] ">
-                <Lottie animationData={item.anim} />
-              </div>
-            )}
-            <a
-              href={`#${item.link}`}
-              className={`nav_btn hidden sm:flex ${
-                scrollPosition <= item.maxPos &&
-                scrollPosition >= item.minPos &&
-                'text-red-500 font-extrabold'
-              } font-[FiraCode] text-white text-[20px]`}
-              key={uuidv4()}
-            >
-              {item.name}
-            </a>
-          </div>
+            {item.name}
+          </a>
         ))}
         <a
           href="https://github.com/ShrikantJawla/ShrikantJawla.github.io/raw/main/Resume/Shrikant_Jawla_resume.pdf"
