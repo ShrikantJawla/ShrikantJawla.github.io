@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import HamBurgerNav from './HamBurgerNav'
 import { v4 as uuidv4 } from 'uuid'
+import HamBurgerNav from './HamBurgerNav'
 
 const navLinksWithScrollMapping = [
   {

@@ -24,7 +24,7 @@ const ContactSection = () => {
 
       {/* Form div */}
 
-      <div className="w-[97%] md:w-[85%] lg:w-[62%] h-[450px] flex flex-col md:flex-row border-red-600 absolute top-[19%] left-[50%] translate-x-[-50%] shadow-lg z-[12]">
+      <div className="w-[97%] md:w-[85%] lg:w-[75%] xl:w-[65%] h-[450px] flex flex-col md:flex-row border-red-600 absolute top-[19%] left-[50%] translate-x-[-50%] shadow-lg z-[12]">
         <div className="w-full md:w-[35%] bg-[#0d1626] pt-5">
           <p className="text-white px-5 font-poppins text-[23px] underline uppercase">
             Contact me

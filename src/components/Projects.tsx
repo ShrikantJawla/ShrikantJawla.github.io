@@ -10,7 +10,7 @@ const Projects = ({ updateIsOpen }: Project) => {
   return (
     <div
       id="project__part"
-      className="w-full h-[600vh] md:h-[320vh] lg:h-[330vh] xl:h-[280vh] bg-[#0f1216] pt-[80px] lg:pt-[80px] "
+      className="w-full h-[550vh] md:h-[290vh] lg:h-[290vh] xl:h-[280vh] bg-[#0f1216] pt-[80px] lg:pt-[80px] "
     >
       {/* Title */}
       <div className="w-[95%] lg:w-[60%] m-[auto] flex justify-start items-center gap-[10px] mb-[65px]">
@@ -20,7 +20,7 @@ const Projects = ({ updateIsOpen }: Project) => {
         <div className="h-[1px] w-[270px] md:w-[340px] bg-gray-800" />
       </div>
       {/* Project Cards */}
-      <div className="md:w-[98%] lg:w-[90%] m-[auto] grid-cols-1 grid md:grid-cols-2 justify-center items-center gap-y-12">
+      <div className=" sm:w-[90%] md:w-[98%] lg:w-[90%] m-[auto] grid-cols-1 grid md:grid-cols-2 justify-center items-center gap-y-12">
         {ProjectsData.map((ele, i) => (
           <ProjectCard
             {...ele}

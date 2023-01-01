@@ -36,7 +36,7 @@ const GithubCalender = () => {
   }, [])
 
   return (
-    <div className="w-full mb-[100px]">
+    <div className="w-[98%] mb-[100px] overflow-x-auto">
       {/* Title */}
       <div className="w-[95%] lg:w-[60%] m-[auto] flex justify-start items-center gap-[10px] mb-[25px]">
         <p className="text-white text-[25px] md:text-[30px] font-bold font-mono">
@@ -45,7 +45,8 @@ const GithubCalender = () => {
         <div className="h-[1px] w-[340px] bg-gray-800" />
       </div>
       <GitHubCalendar
-        transformData={selectLastHalfYear}
+        style={{ color: 'white' }}
+        // transformData={selectLastHalfYear}
         blockSize={20}
         blockMargin={5}
         fontSize={windowSize <= 350 ? 12 : 20}
@@ -57,8 +58,7 @@ const GithubCalender = () => {
           level3: '#057228',
           level4: '#024617',
         }}
-        style={{ color: 'white', margin: 'auto' }}
-        year={new Date().getFullYear()}
+        year={new Date().getFullYear() - 1}
       >
         <ReactToolTip html delayShow={20} />
       </GitHubCalendar>
