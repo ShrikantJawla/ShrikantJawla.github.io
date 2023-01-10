@@ -1,13 +1,11 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import ContactSection from './components/ContactSection'
 import HomeSection from './components/HomeSection'
+import ImageModel from './components/ImageModel'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Stats from './components/Stats'
-import { useState } from 'react'
-
-import ImageModel from './components/ImageModel'
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState<number>(0)

@@ -30,7 +30,8 @@ const navLinksWithScrollMapping = [
 ]
 
 const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
-  const [active, setActive] = useState<string>('#040506')
+  // const [active, setActive] = useState<string>('#040506')
+  const [active, setActive] = useState<boolean>(false)
   useEffect(() => {
     window.addEventListener('scroll', stickNavbar)
     return () => window.removeEventListener('scroll', stickNavbar)
@@ -38,21 +39,25 @@ const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY
-      windowHeight > 56 ? setActive('#13151a') : setActive('#040506')
+      // windowHeight > 56 ? setActive('#13151a') : setActive('#040506')
+      windowHeight > 56 ? setActive(true) : setActive(false)
     }
   }
   return (
     <div
-      style={{ backgroundColor: active }}
-      className={`h-[90px] py-1 px-10 flex justify-between fixed top-0 left-0 right-0 z-[15]`}
+      // style={{ backgroundColor: active }}
+      className={`h-[90px] py-1 px-10 flex justify-between fixed top-0 left-0 right-0 z-[15] ${
+        active &&
+        'bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'
+      } `}
     >
       <div className="w-[80px] h-full flex justify-center items-center">
         <img
           className="w-[50px]"
-          src="https://github.com/ShrikantJawla/Portfolio-Images/blob/main/logo.png?raw=true"
+          src="https://github.com/ShrikantJawla/Images/blob/main/logo.png?raw=true"
           alt="logo"
         />
-      </div>
+      </div>  
       <div className=" w-fit flex justify-center items-center space-x-8 ">
         {navLinksWithScrollMapping.map((item, ind) => (
           <a

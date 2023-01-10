@@ -16,7 +16,7 @@ const Skills = () => {
   const [categoryType, setCategoryType] = useState('')
 
   return (
-    <div id='skills__part' className="w-full h-[300vh] md:h-[190vh] lg:h-[140vh] bg-[#0d1116] pt-[100px] lg:pt-[90px] ">
+    <div id='skills__part' className="w-full h-[254vh] md:h-[190vh] lg:h-[140vh] bg-[#0d1116] pt-[100px] lg:pt-[90px] ">
       <div className="w-full flex flex-col items-center gap-[10px]">
         {/* Title */}
         <div className="w-[95%] lg:w-[60%] m-[auto] flex justify-start items-center gap-[10px] mb-[25px]">
