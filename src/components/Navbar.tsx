@@ -57,7 +57,7 @@ const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
           src="https://github.com/ShrikantJawla/Images/blob/main/logo.png?raw=true"
           alt="logo"
         />
-      </div>  
+      </div>
       <div className=" w-fit flex justify-center items-center space-x-8 ">
         {navLinksWithScrollMapping.map((item, ind) => (
           <a
@@ -73,7 +73,7 @@ const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
           </a>
         ))}
         <a
-          href="https://github.com/ShrikantJawla/ShrikantJawla.github.io/raw/main/Resume/Shrikant_Jawla_resume.pdf"
+          href="https://github.com/ShrikantJawla/Resume/raw/main/Shrikant_Jawla_Resume.pdf"
           download="Shrikant_Jawla_resume"
           className="uppercase text-[12px] hover:text-blue-500 transition duration-200 ease-in-out hover:scale-105 hidden sm:flex border-[1px] border-sky-600 p-2 px-4 text-sky-600 cursor-pointer"
         >

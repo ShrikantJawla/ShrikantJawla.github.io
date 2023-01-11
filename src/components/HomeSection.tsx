@@ -1,4 +1,3 @@
-
 interface Props {}
 
 const HomeSection = (props: Props) => {
@@ -35,8 +34,8 @@ const HomeSection = (props: Props) => {
           </p>
           <button className="self-start w-fit md:w-[150px] border-blue-500 border text-gray-100 hover:text-white p-[10px] px-[35px] ml-10 hover:border-white">
             <a
-              href="https://github.com/ShrikantJawla/ShrikantJawla.github.io/raw/main/Resume/Shrikant_Jawla_resume.pdf"
-              download="Shrikant_Jawla_resume"
+              href="https://github.com/ShrikantJawla/Resume/raw/main/Shrikant_Jawla_Resume.pdf"
+              download="Shrikant_Jawla_Resume"
             >
               RESUME
             </a>
