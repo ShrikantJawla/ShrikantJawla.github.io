@@ -45,7 +45,7 @@ const HomeSection = (props: Props) => {
         <div className="w-[50%] md:w-[40%] h-full flex justify-center items-center">
           <img
             className="rounded-full h-[60%] xl:h-[70%] opacity-80 border-[9px] border-blue-300"
-            src="https://github.com/ShrikantJawla/Images/blob/main/photo_2022-07-08_16-49-45.jpg?raw=true"
+            src="https://github.com/ShrikantJawla/Images/blob/main/My%20photo-2.JPG?raw=true"
             alt="me"
           />
         </div>
