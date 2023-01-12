@@ -44,7 +44,7 @@ const Footer = () => {
               alt="wattsapp icon"
             />
             <a href="tel:+919069006661" className="text-white text-[12px]">
-              +91-9069006661
+              +91-9045946661
             </a>
           </div>
           <div className="w-full h-[20px] flex justify-start items-center gap-3">
