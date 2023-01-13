@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import ContactSection from './components/ContactSection'
 import HomeSection from './components/HomeSection'
 import ImageModel from './components/ImageModel'
+import { Loading } from './components/Loading'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
@@ -19,6 +20,7 @@ function App() {
   }, [])
   return (
     <>
+      <Loading />
       <Navbar scrollPosition={scrollPosition} />
       <HomeSection />
       <Skills />
