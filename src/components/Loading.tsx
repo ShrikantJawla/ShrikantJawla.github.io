@@ -35,6 +35,6 @@ export const Loading = (props: Props) => {
 }
 
 function getRandomInt(arr: Files, max: number) {
-  let val = 1 + Math.floor(Math.random() * (max - 1))
+  let val = 1 + Math.floor(Math.random() * max)
   return arr[val]
 }
