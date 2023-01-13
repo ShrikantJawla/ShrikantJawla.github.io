@@ -45,7 +45,6 @@ const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
   }
   return (
     <div
-      // style={{ backgroundColor: active }}
       className={`h-[90px] py-1 px-10 flex justify-between fixed top-0 left-0 right-0 z-[15] ${
         active &&
         'bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'

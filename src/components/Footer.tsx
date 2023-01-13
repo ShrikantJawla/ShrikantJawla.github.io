@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const Footer = () => {
   return (
-    <div className="w-full h-[280px] md:h-[200px] flex flex-col md:flex-row justify-center gap md:gap-4 bg-black absolute bottom-0">
+    <div className="w-full min-h-[450px] md:min-h-[200px] flex flex-col md:flex-row justify-center gap md:gap-4 bg-black absolute bottom-0">
       {/* Links Section */}
       <div className="w-full md:w-[40%] h-[50%] md:h-full flex flex-col items-center p-10">
         <p className="text-white w-[40%] ">Links</p>
@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
 
       {/* Contacts Section  */}
-      <div className="w-full md:w-[40%] h-[50%] md:h-full flex flex-col items-center p-10">
+      <div className="w-full md:w-[48%] h-[50%] md:h-full flex flex-col items-center p-10">
         <p className="text-white w-[40%]">Contacts</p>
         <div className="w-[55%] md:w-[40%] h-fit m-[auto] mt-5 flex flex-col items-center justify-center gap-0">
           <div className="w-full h-[20px] flex justify-start items-center gap-3">
@@ -43,7 +43,7 @@ const Footer = () => {
               src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png"
               alt="wattsapp icon"
             />
-            <a href="tel:+919069006661" className="text-white text-[12px]">
+            <a href="tel:+919045946661" className="text-white text-[12px]">
               +91-9045946661
             </a>
           </div>

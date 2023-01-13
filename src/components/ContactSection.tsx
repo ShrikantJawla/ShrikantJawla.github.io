@@ -5,7 +5,7 @@ const ContactSection = () => {
   return (
     <div
       id="contact__part"
-      className="w-full h-[240vh] md:h-[200vh] lg:h-[160vh] bg-[#0d1116] pt-[10px] lg:pt-[10px] relative"
+      className="w-full min-h-[1600px] md:min-h-[1000px] bg-[#0d1116] pt-[10px] lg:pt-[10px] relative"
     >
       {/* Image and title div */}
       <div className="w-full h-[400px] ">
@@ -36,7 +36,7 @@ const ContactSection = () => {
                 src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png"
                 alt="wattsapp icon"
               />
-              <a href="tel:+919069006661" className="text-white">
+              <a href="tel:+919045946661" className="text-white">
                 +91-9045946661
               </a>
             </div>

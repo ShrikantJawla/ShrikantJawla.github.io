@@ -4,7 +4,7 @@ const HomeSection = (props: Props) => {
   return (
     <div
       id="about__part"
-      className="w-full h-[120vh] md:h-[100vh] bg-[#040506] pt-[100px] lg:pt-[90px] relative"
+      className="w-full min-h-[900px] md:min-h-[720px] bg-[#040506] pt-[100px] lg:pt-[90px] relative"
     >
       {/* Blue color Box left side absolute */}
       <div className="w-[55%] md:w-[40%] h-[100%] bg-blue-600 opacity-[0.4] absolute left-0 top-0"></div>
@@ -24,7 +24,7 @@ const HomeSection = (props: Props) => {
               {'> Full Stack Web Developer'}
             </p>
           </div>
-          <p className="w-full px-4 text-[13px] xl:text-[15px] text-white ">
+          <p className="w-full px-4 text-[12.5px] text-center md:text-left xl:text-[15px] text-white ">
             Aspiring Software Developer equipped with problem-solving and
             user-centric attitude. Has a deep interest in IT and is capable of
             writing code in NextJS, React, Redux, HTML, and CSS, on the front
