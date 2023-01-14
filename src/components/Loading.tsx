@@ -26,7 +26,7 @@ export const Loading = (props: Props) => {
   return (
     <>
       <div
-        className={`${visible} w-full h-[100vh] fixed top-0 right-0 bg-black z-50 flex justify-center items-center`}
+        className={`${visible} w-full h-[100vh] fixed top-0 right-0 bg-black z-[500] flex justify-center items-center`}
       >
         <Lottie animationData={getRandomInt(files, 4)} />
       </div>

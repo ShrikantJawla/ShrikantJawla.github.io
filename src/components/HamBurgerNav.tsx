@@ -30,7 +30,7 @@ const HamBurgerNav = () => {
         onClick={() => setIsOpen(true)}
       />
       {isOpen && (
-        <div className="md:hidden fixed z-[900] right-0 top-0 bottom-0 w-[calc(100vw-70px)] bg-[#121820] transition duration-150 ease-in-out p-7 flex flex-col gap-5 shadow-xl">
+        <div className="md:hidden fixed z-[90] right-0 top-0 bottom-0 w-[calc(100vw-70px)] bg-[#121820] transition duration-150 ease-in-out p-7 flex flex-col gap-5 shadow-xl">
           <div className="w-full flex justify-end">
             <VscChromeClose
               onClick={() => {
