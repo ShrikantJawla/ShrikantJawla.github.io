@@ -4,14 +4,22 @@ const HomeSection = (props: Props) => {
   return (
     <div
       id="about__part"
-      className="w-full min-h-[900px] md:min-h-[720px] bg-[#040506] pt-[100px] lg:pt-[90px] relative"
+      className="w-full min-h-[900px] md:min-h-[720px] bg-[#040506] pt-[100px] lg:pt-[90px] relative z-[1]"
     >
       {/* Blue color Box left side absolute */}
-      <div className="w-[55%] md:w-[40%] h-[100%] bg-blue-600 opacity-[0.4] absolute left-0 top-0"></div>
+      <div className="w-[55%] z-[2] md:w-[40%] h-[100%] bg-blue-600 opacity-[0.4] absolute left-0 top-0"></div>
+      {/* Background picture */}
+      <div className="absolute z-[-1] top-0 opacity-60 left-0 bottom-0 w-full h-[100%]">
+        <img
+          className="w-full h-[100%] object-cover"
+          src="/home-bg.jpg"
+          alt=""
+        />
+      </div>
       {/* Main div consisting photo and text */}
       <div
         style={{ transform: 'translate(-50%,-50%)' }}
-        className="w-[95%] xl:w-[85%] space-y-[20px] lg:space-y-0 absolute top-[50%] left-[50%] h-fit lg:h-[500px] m-auto bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-600 md:rounded-br-[25%] md:rounded-tl-[25%] p-[5px] py-[35px] lg:py-[5px] flex flex-col md:flex-row justify-center items-center shadow-2xl"
+        className="w-[95%] z-[4] xl:w-[85%] space-y-[20px] lg:space-y-0 absolute top-[50%] left-[50%] h-fit lg:h-[500px] m-auto bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-600 rounded-2xl md:rounded-none md:rounded-br-[25%] md:rounded-tl-[25%] p-[5px] py-[35px] lg:py-[5px] flex flex-col md:flex-row justify-center items-center shadow-2xl"
       >
         {/* Text div */}
         <div className="w-[85%] lg:w-[60%] flex flex-col justify-center items-center space-y-3 pl-[20px]">

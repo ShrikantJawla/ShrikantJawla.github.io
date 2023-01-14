@@ -16,8 +16,19 @@ const Skills = () => {
   const [categoryType, setCategoryType] = useState('')
 
   return (
-    <div id='skills__part' className="w-full h-[1700px] md:h-[1200px] lg:h-[900px] bg-[#0d1116] pt-[100px] lg:pt-[90px] ">
-      <div className="w-full flex flex-col items-center gap-[10px]">
+    <div
+      id="skills__part"
+      className="w-full h-[1700px] z-[1] md:h-[1200px] lg:h-[900px] relative bg-[#0d1116] pt-[100px] lg:pt-[90px] "
+    >
+      {/* Background picture */}
+      <div className="absolute z-[-1] top-0 opacity-50 left-0 bottom-0 w-full h-[100%]">
+        <img
+          className="w-full h-[100%]"
+          src="/skills-bg.jpg"
+          alt=""
+        />
+      </div>
+      <div className="w-full z-10 flex flex-col items-center gap-[10px]">
         {/* Title */}
         <div className="w-[95%] lg:w-[60%] m-[auto] flex justify-start items-center gap-[10px] mb-[25px]">
           <p className="text-white text-[25px] md:text-[30px] font-bold font-mono">

@@ -10,8 +10,17 @@ const Projects = ({ updateIsOpen }: Project) => {
   return (
     <div
       id="project__part"
-      className="w-full min-h-[3250px] md:min-h-[1900px] xl:h-[280vh] pb-[200px] bg-[#0f1216] pt-[80px] lg:pt-[80px] "
+      className="w-full relative z-[1] min-h-[3250px] md:min-h-[1900px] xl:h-[280vh] pb-[200px] bg-[#0f1216] pt-[80px] lg:pt-[80px] "
     >
+      {/* Background picture */}
+      <div className="absolute z-[-1] top-0 opacity-10 left-0 bottom-0 w-full h-[100%]">
+        <img
+          className="w-full h-[100%] object-cover"
+          src="/home-bg.jpg"
+          alt=""
+        />
+      </div>
+
       {/* Title */}
       <div className="w-[95%] lg:w-[60%] m-[auto] flex justify-start items-center gap-[10px] mb-[65px]">
         <p className="text-white text-[20px] md:text-[30px] font-bold font-mono">
