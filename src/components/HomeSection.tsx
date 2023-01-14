@@ -24,7 +24,7 @@ const HomeSection = (props: Props) => {
               {'> Full Stack Web Developer'}
             </p>
           </div>
-          <p className="w-full px-4 text-[12.5px] text-center md:text-left xl:text-[15px] text-white ">
+          <p className="w-full px-4 text-[12.5px] md:text-left xl:text-[15px] text-white ">
             Aspiring Software Developer equipped with problem-solving and
             user-centric attitude. Has a deep interest in IT and is capable of
             writing code in NextJS, React, Redux, HTML, and CSS, on the front
@@ -32,7 +32,7 @@ const HomeSection = (props: Props) => {
             intensely interested in obtaining a software developer position to
             work on enhancing the product experience.
           </p>
-          <button className="self-start w-fit md:w-[150px] border-blue-500 border text-gray-100 hover:text-white p-[10px] px-[35px] m-auto md:m-0 md:ml-4 hover:border-white">
+          <button className="self-start w-fit md:w-[150px] border-blue-500 border text-gray-100 hover:text-white p-[10px] px-[35px] ml-4 hover:border-white">
             <a
               href="https://github.com/ShrikantJawla/Resume/raw/main/Shrikant_Jawla_Resume.pdf"
               download="Shrikant_Jawla_Resume"
