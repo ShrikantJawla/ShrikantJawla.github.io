@@ -4,7 +4,7 @@ import HamBurgerNav from './HamBurgerNav'
 
 const navLinksWithScrollMapping = [
   {
-    name: '_Abouttt',
+    name: '_About',
     minPos: 0,
     maxPos: 599,
     link: 'about__part',
