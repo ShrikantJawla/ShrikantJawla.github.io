@@ -59,30 +59,30 @@ const ContactSection = () => {
           <p className="text-blue-800 px-5 font-poppins text-[23px] uppercase">
             Send me a message
           </p>
-          <form className="w-full p-4 md:p-9 flex flex-col gap-5 h-[320px] justify-center">
-            <div className="w-full flex justify-between gap-5">
+          <form className="w-full p-4 md:p-9 flex flex-col gap-5 h-[380px] justify-center">
+            <div className="w-full flex flex-col md:flex-row justify-between gap-5">
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="w-[50%] h-[30px] p-2 shadow-lg "
+                className="w-full md:w-[50%] h-[35px] p-2 shadow-lg rounded-sm"
               />
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="w-[50%] h-[30px] p-2 shadow-lg"
+                className="w-full md:w-[50%] h-[35px] p-2 shadow-lg rounded-sm"
               />
             </div>
             <input
               type="text"
               placeholder="Subject"
-              className="w-full h-[30px] p-2 shadow-lg"
+              className="w-full h-[35px] p-2 shadow-lg rounded-sm"
             />
             <input
               type="text"
               placeholder="Message"
-              className="w-full h-[55px] p-2 rounded-md"
+              className="w-full h-[120px] p-2 rounded-md shadow-lg"
             />
-            <button className="border border-gray-700 hover:border-white h-[35px] hover:text-white font-semibold transition duration-500 ease-in-out uppercase">
+            <button className="border border-gray-700 hover:border-white h-[35px] hover:text-white font-semibold transition duration-500 ease-in-out uppercase shadow-lg">
               Send
             </button>
           </form>
