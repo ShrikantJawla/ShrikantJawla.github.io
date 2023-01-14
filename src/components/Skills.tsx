@@ -39,7 +39,7 @@ const Skills = () => {
         {/* Main */}
         <div className="w-[80%] md:w-[72%] lg:w-[60%] flex gap-[15px] h-[200px]">
           {/* Buttons */}
-          <div className="w-[36%] md:w-[24%] lg:w-[14%] h-full border-l flex flex-col gap-4">
+          <div className="w-[36%] md:w-[30%] lg:w-[14%] h-full border-l flex flex-col gap-4">
             <button
               onClick={() => setCategoryType('')}
               className={`skills__filter__btn ${

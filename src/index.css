@@ -26,3 +26,6 @@
   background-color: rgb(156, 150, 150);
 }
 
+.zInd {
+  z-index: 1000 !important;
+}

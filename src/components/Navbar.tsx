@@ -45,9 +45,9 @@ const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
   }
   return (
     <div
-      className={`h-[90px] py-1 px-10 flex justify-between fixed top-0 left-0 right-0 z-[15] ${
+      className={`h-[90px] py-1 px-10 flex justify-between fixed top-0 left-0 right-0 z-[3000] ${
         active &&
-        'bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'
+        'bg-clip-padding backdrop-filter bg-black md:backdrop-blur-xl bg-opacity-60'
       } `}
     >
       <div className="w-[80px] h-full flex justify-center items-center">
