@@ -8,6 +8,7 @@ interface Day {
   level: 0 | 1 | 2 | 3 | 4
 }
 
+
 const selectLastHalfYear = (contributions: any) => {
   const currentYear = new Date().getFullYear()
   const currentMonth = new Date().getMonth()
@@ -58,7 +59,7 @@ const GithubCalender = () => {
           level3: '#057228',
           level4: '#024617',
         }}
-        year={new Date().getFullYear() - 1}
+        // year={new Date().getFullYear() - 1}
       >
         <ReactToolTip html delayShow={20} />
       </GitHubCalendar>
