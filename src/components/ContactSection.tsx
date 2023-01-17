@@ -1,7 +1,45 @@
-import React from 'react'
+import axios from 'axios'
+import React, { FormEvent, useState } from 'react'
 import Footer from './Footer'
 
+const initState = {
+  name: '',
+  email: '',
+  subject: '',
+  message: '',
+}
+
 const ContactSection = () => {
+  const [input, setInput] = useState(initState)
+  const [loading, setLoading] = useState(false)
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+    if (
+      input.name === '' ||
+      input.email === '' ||
+      input.subject === '' ||
+      input.message === ''
+    ) {
+      return alert('Please fill the details so that I can reply you back!')
+    }
+    try {
+      const res = await axios.post(
+        'https://puce-bored-bass.cyclic.app/mail/sendEmail',
+        input,
+      )
+      setInput(initState)
+      if (res.data.status === 1) {
+        setLoading(false)
+        alert(
+          'Thankyou! I have received message successfully, I will reply as soon as possible.',
+        )
+      }
+    } catch (error) {
+      console.log(error.message)
+      setLoading(false)
+    }
+  }
   return (
     <div
       id="contact__part"
@@ -59,31 +97,54 @@ const ContactSection = () => {
           <p className="text-blue-800 px-5 font-poppins text-[23px] uppercase">
             Send me a message
           </p>
-          <form className="w-full p-4 md:p-9 flex flex-col gap-5 h-[380px] justify-center">
+          <form
+            onSubmit={handleSubmit}
+            className="w-full p-4 md:p-9 flex flex-col gap-5 h-[380px] justify-center"
+          >
             <div className="w-full flex flex-col md:flex-row justify-between gap-5">
               <input
+                onChange={({ target }) =>
+                  setInput({ ...input, name: target.value })
+                }
+                value={input.name}
                 type="text"
                 placeholder="Enter your name"
                 className="w-full md:w-[50%] h-[35px] p-2 shadow-lg rounded-sm"
               />
               <input
-                type="text"
-                placeholder="Enter your name"
+                onChange={({ target }) =>
+                  setInput({ ...input, email: target.value })
+                }
+                value={input.email}
+                type="email"
+                placeholder="Enter your email"
                 className="w-full md:w-[50%] h-[35px] p-2 shadow-lg rounded-sm"
               />
             </div>
             <input
+              onChange={({ target }) =>
+                setInput({ ...input, subject: target.value })
+              }
+              value={input.subject}
               type="text"
               placeholder="Subject"
               className="w-full h-[35px] p-2 shadow-lg rounded-sm"
             />
             <input
+              onChange={({ target }) =>
+                setInput({ ...input, message: target.value })
+              }
+              value={input.message}
               type="text"
               placeholder="Message"
               className="w-full h-[120px] p-2 rounded-md shadow-lg"
             />
-            <button className="border border-gray-700 hover:border-white h-[35px] hover:text-white font-semibold transition duration-500 ease-in-out uppercase shadow-lg">
-              Send
+            <button
+              disabled={loading}
+              type="submit"
+              className="border border-gray-700 hover:border-white h-[35px] hover:text-white font-semibold transition duration-500 ease-in-out uppercase shadow-lg"
+            >
+              {loading ? 'Sending please wait...' : 'Send'}
             </button>
           </form>
         </div>

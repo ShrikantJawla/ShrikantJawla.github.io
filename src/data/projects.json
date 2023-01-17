@@ -119,8 +119,8 @@
       "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/0.png?raw=true",
       "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/1.png?raw=true",
       "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/2.png?raw=true",
-      "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/3.png?raw=true",
       "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/4.png?raw=true",
+      "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/3.png?raw=true",
       "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/5.png?raw=true"
     ],
     "techStacks": [
@@ -135,5 +135,5 @@
       "github": "https://github.com/ShrikantJawla/openaskai",
       "deploy_link": "https://openaskai.vercel.app"
     }
-  }
+    }
 ]
