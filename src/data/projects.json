@@ -110,5 +110,30 @@
       "github": "https://github.com/ShrikantJawla/nutrimeter",
       "deploy_link": "https://nutrimeter.vercel.app/"
     }
+  },
+  {
+    "title": "OpenAskAI",
+    "projectImg": "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/0.png?raw=true",
+    "aboutText": "This is a small, completely responsive app I built using OpenAI, tried to imitate small part of ChatGPT.",
+    "screenShots": [
+      "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/0.png?raw=true",
+      "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/1.png?raw=true",
+      "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/2.png?raw=true",
+      "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/3.png?raw=true",
+      "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/4.png?raw=true",
+      "https://github.com/ShrikantJawla/Images/blob/main/Open%20AI/5.png?raw=true"
+    ],
+    "techStacks": [
+      "NextJs",
+      "TypeScript",
+      "NextJs API",
+      "Tailwindcss",
+      "Mongo DB",
+      "Vercel"
+    ],
+    "links": {
+      "github": "https://github.com/ShrikantJawla/openaskai",
+      "deploy_link": "https://openaskai.vercel.app"
+    }
   }
 ]
