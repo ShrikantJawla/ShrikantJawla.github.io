@@ -1,10 +1,16 @@
-import React from 'react'
-import { SiLeetcode } from 'react-icons/si'
+import { motion } from 'framer-motion'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { SiLeetcode } from 'react-icons/si'
+import { fadeInTextVariant } from '../animation/animation'
 
 const Footer = () => {
   return (
-    <div className="w-full min-h-[450px] md:min-h-[200px] flex flex-col md:flex-row justify-center gap md:gap-4 z-[2] bg-black absolute bottom-0">
+    <motion.div
+      variants={fadeInTextVariant}
+      initial="hidden"
+      whileInView="visible"
+      className="w-full min-h-[450px] md:min-h-[200px] flex flex-col md:flex-row justify-center gap md:gap-4 z-[2] bg-black absolute bottom-0"
+    >
       {/* Links Section */}
       <div className="w-full md:w-[40%] h-[50%] md:h-full flex flex-col items-center p-10">
         <p className="text-white w-[40%] ">Links</p>
@@ -62,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

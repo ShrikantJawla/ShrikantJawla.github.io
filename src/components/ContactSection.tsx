@@ -1,6 +1,8 @@
 import axios from 'axios'
 import React, { FormEvent, useState } from 'react'
+import { fadeInTextVariant } from '../animation/animation'
 import Footer from './Footer'
+import { motion } from 'framer-motion'
 
 const initState = {
   name: '',
@@ -19,10 +21,10 @@ const ContactSection = () => {
       input.email === '' ||
       input.subject === '' ||
       input.message === ''
-      ) {
-        return alert('Please fill the details so that I can reply you back!')
-      }
-      try {
+    ) {
+      return alert('Please fill the details so that I can reply you back!')
+    }
+    try {
       setLoading(true)
       const res = await axios.post(
         'https://puce-bored-bass.cyclic.app/mail/sendEmail',
@@ -31,9 +33,7 @@ const ContactSection = () => {
       setInput(initState)
       if (res.data.status === 1) {
         setLoading(false)
-        alert(
-          'Email has been successfully sent!.',
-        )
+        alert('Email has been successfully sent!.')
       }
     } catch (error) {
       console.log(error.message)
@@ -62,7 +62,12 @@ const ContactSection = () => {
 
       {/* Form div */}
 
-      <div className="w-[97%] md:w-[85%] lg:w-[75%] xl:w-[65%] h-[450px] flex flex-col md:flex-row border-red-600 absolute top-[19%] left-[50%] translate-x-[-50%] shadow-lg z-[12]">
+      <motion.div
+        variants={fadeInTextVariant}
+        initial="hidden"
+        whileInView="visible"
+        className="w-[97%] md:w-[85%] lg:w-[75%] xl:w-[65%] h-[450px] flex flex-col md:flex-row border-red-600 absolute top-[19%] left-[50%] translate-x-[-50%] shadow-lg z-[12]"
+      >
         <div className="w-full md:w-[35%] bg-[#0d1626] pt-5">
           <p className="text-white px-5 font-poppins text-[23px] underline uppercase">
             Contact me
@@ -148,7 +153,7 @@ const ContactSection = () => {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
       <Footer />
     </div>
   )

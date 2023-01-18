@@ -1,8 +1,15 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import { fadeInTextVariant } from '../animation/animation'
 
 const GithubStats = () => {
   return (
-    <div className="w-full flex flex-col gap-7">
+    <motion.div
+      variants={fadeInTextVariant}
+      initial="hidden"
+      whileInView="visible"
+      className="w-full flex flex-col gap-7"
+    >
       {/* Title */}
       <div className="w-[95%] lg:w-[60%] m-[auto] flex justify-start items-center gap-[10px] mb-[25px]">
         <p className="text-white text-[25px] md:text-[30px] font-bold font-mono">
@@ -30,7 +37,7 @@ const GithubStats = () => {
           alt="github statistics"
         />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

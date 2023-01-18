@@ -2,6 +2,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { State } from '../redux/store'
 import { getSingleImageToDisplay } from './../redux/actions'
 import { v4 as uuidv4 } from 'uuid'
+import { fadeInTextVariant } from '../animation/animation'
+import { motion } from 'framer-motion'
 
 type LinksType = {
   github: string
@@ -30,7 +32,12 @@ const ProjectCard = ({
   const dispatch = useDispatch()
   const { image } = useSelector((s: State) => s.displayModel)
   return (
-    <div className="w-[94%] sm:w-[85%] lg:w-[86%] h-[700px] shadow-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-600 pb-10 m-[auto] rounded-md">
+    <motion.div
+      variants={fadeInTextVariant}
+      initial="hidden"
+      whileInView="visible"
+      className="w-[94%] sm:w-[85%] lg:w-[86%] h-[700px] shadow-xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-600 pb-10 m-[auto] rounded-md"
+    >
       <div className="w-full overflow-hidden">
         <img
           className="w-full h-[290px] hover:scale-[1.1] transition duration-4000 ease-in-out cursor-pointer object-cover"
@@ -94,7 +101,7 @@ const ProjectCard = ({
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

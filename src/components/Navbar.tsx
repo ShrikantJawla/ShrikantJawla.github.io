@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import HamBurgerNav from './HamBurgerNav'
@@ -28,6 +29,9 @@ const navLinksWithScrollMapping = [
     link: 'contact__part',
   },
 ]
+const trackDownload = async () => {
+  await axios.post('https://puce-bored-bass.cyclic.app/track/button', {})
+}
 
 const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
   // const [active, setActive] = useState<string>('#040506')
@@ -72,6 +76,7 @@ const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
           </a>
         ))}
         <a
+          onClick={trackDownload}
           href="https://github.com/ShrikantJawla/Resume/raw/main/Shrikant_Jawla_Resume.pdf"
           download="Shrikant_Jawla_resume"
           className="uppercase text-[12px] hover:text-blue-500 transition duration-200 ease-in-out hover:scale-105 hidden sm:flex border-[1px] border-sky-600 p-2 px-4 text-sky-600 cursor-pointer"

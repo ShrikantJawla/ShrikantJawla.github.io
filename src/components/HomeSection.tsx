@@ -1,4 +1,6 @@
-import axios from "axios"
+import axios from 'axios'
+import { motion } from 'framer-motion'
+import { fadeInTextVariant } from '../animation/animation'
 
 interface Props {}
 
@@ -42,10 +44,13 @@ const HomeSection = (props: Props) => {
             user-centric attitude. Has a deep interest in IT and is capable of
             writing code in NextJS, React, Redux, HTML, and CSS, on the front
             end, Node JS and Express Js on the backend. A team player and
-            intensely interested in obtaining a Web developer position to
-            work on enhancing the product experience.
+            intensely interested in obtaining a Web developer position to work
+            on enhancing the product experience.
           </p>
-          <button onClick={trackDownload} className="self-start w-fit md:w-[150px] border-blue-500 border text-gray-100 hover:text-white p-[10px] px-[35px] ml-4 hover:border-white">
+          <button
+            onClick={trackDownload}
+            className="self-start w-fit md:w-[150px] border-blue-500 border text-gray-100 hover:text-white p-[10px] px-[35px] ml-4 hover:border-white"
+          >
             <a
               href="https://github.com/ShrikantJawla/Resume/raw/main/Shrikant_Jawla_Resume.pdf"
               download="Shrikant_Jawla_Resume"
@@ -55,13 +60,18 @@ const HomeSection = (props: Props) => {
           </button>
         </div>
         {/* Image Div */}
-        <div className="w-[50%] md:w-[40%] pr-6 h-full flex justify-center items-center">
+        <motion.div
+          variants={fadeInTextVariant}
+          initial="hidden"
+          whileInView="visible"
+          className="w-[50%] md:w-[40%] pr-6 h-full flex justify-center items-center"
+        >
           <img
             className="rounded-full h-[60%] object-cover xl:h-[70%] opacity-80 border-[9px] border-blue-300"
             src="https://github.com/ShrikantJawla/Images/blob/main/My%20photo-2.JPG?raw=true"
             alt="me"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   )

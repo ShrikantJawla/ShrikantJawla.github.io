@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import GitHubCalendar from 'react-github-calendar'
 import ReactToolTip from 'react-tooltip'
+import { fadeInTextVariant } from '../animation/animation'
+import { motion } from 'framer-motion'
 
 interface Day {
   date: string
   count: number
   level: 0 | 1 | 2 | 3 | 4
 }
-
 
 const selectLastHalfYear = (contributions: any) => {
   const currentYear = new Date().getFullYear()
@@ -37,7 +38,12 @@ const GithubCalender = () => {
   }, [])
 
   return (
-    <div className="w-[98%] mb-[100px] overflow-x-auto">
+    <motion.div
+      variants={fadeInTextVariant}
+      initial="hidden"
+      whileInView="visible"
+      className="w-[98%] mb-[100px] overflow-x-auto"
+    >
       {/* Title */}
       <div className="w-[95%] lg:w-[60%] m-[auto] flex justify-start items-center gap-[10px] mb-[25px]">
         <p className="text-white text-[25px] md:text-[30px] font-bold font-mono">
@@ -63,7 +69,7 @@ const GithubCalender = () => {
       >
         <ReactToolTip html delayShow={20} />
       </GitHubCalendar>
-    </div>
+    </motion.div>
   )
 }
 
