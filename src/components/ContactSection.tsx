@@ -14,16 +14,16 @@ const ContactSection = () => {
   const [loading, setLoading] = useState(false)
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
-    setLoading(true)
     if (
       input.name === '' ||
       input.email === '' ||
       input.subject === '' ||
       input.message === ''
-    ) {
-      return alert('Please fill the details so that I can reply you back!')
-    }
-    try {
+      ) {
+        return alert('Please fill the details so that I can reply you back!')
+      }
+      try {
+      setLoading(true)
       const res = await axios.post(
         'https://puce-bored-bass.cyclic.app/mail/sendEmail',
         input,
@@ -32,7 +32,7 @@ const ContactSection = () => {
       if (res.data.status === 1) {
         setLoading(false)
         alert(
-          'Thankyou! I have received message successfully, I will reply as soon as possible.',
+          'Email has been successfully sent!.',
         )
       }
     } catch (error) {
