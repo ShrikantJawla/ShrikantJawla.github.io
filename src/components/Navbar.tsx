@@ -1,92 +1,99 @@
-import axios from 'axios'
-import { useEffect, useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
-import HamBurgerNav from './HamBurgerNav'
+"use client";
 
-const navLinksWithScrollMapping = [
-  {
-    name: '_About',
-    minPos: 0,
-    maxPos: 599,
-    link: 'about__part',
-  },
-  {
-    name: '_Skills',
-    minPos: 600,
-    maxPos: 2599,
-    link: 'skills__part',
-  },
-  {
-    name: '_Projects',
-    minPos: 2600,
-    maxPos: 3999,
-    link: 'project__part',
-  },
-  {
-    name: '_Contacts',
-    minPos: 4000,
-    maxPos: 9000,
-    link: 'contact__part',
-  },
-]
-const trackDownload = async () => {
-  await axios.post('https://puce-bored-bass.cyclic.app/track/button', {})
-}
+import Image from "next/image";
+import React, { useState } from "react";
+import HamBurgerIcon from "@/assets/Images/icons8-hamburger.svg";
+import ThemeSwither from "./ThemeSwither";
+import closeIcon from "@/assets/Images/icons8-close.svg";
+import myLogo from "@/assets/Images/logo.png";
 
-const Navbar = ({ scrollPosition }: { scrollPosition: number }) => {
-  // const [active, setActive] = useState<string>('#040506')
-  const [active, setActive] = useState<boolean>(false)
-  useEffect(() => {
-    window.addEventListener('scroll', stickNavbar)
-    return () => window.removeEventListener('scroll', stickNavbar)
-  }, [])
-  const stickNavbar = () => {
-    if (window !== undefined) {
-      let windowHeight = window.scrollY
-      // windowHeight > 56 ? setActive('#13151a') : setActive('#040506')
-      windowHeight > 56 ? setActive(true) : setActive(false)
-    }
-  }
+const links = [
+  { title: "Skills", url: "__skills" },
+  { title: "Projects", url: "__projects" },
+  // { title: "Stats", url: "__stats" },
+  { title: "Contact", url: "__contacts" },
+  { title: "Resume/CV", url: "__resume" },
+];
+
+type Props = {};
+
+const Navbar = (props: Props) => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="w-full h-[55px] md:h-[70px] rounded-[--section_br_radius] bg-[--nav_bg] dark:bg-[#1A1A1A] flex justify-between items-center px-[12px] md:px-[20px] lg:px-[30px] xl:px-[53px]">
+      <a href="#__home" className="">
+        <Image
+          src={myLogo}
+          alt="Home Icon"
+          height={35}
+          width={35}
+          className=""
+        />
+      </a>
+      {links.map((ele, ind) => (
+        <a
+          key={ind}
+          className="group hidden lg:flex"
+          href={
+            ele.title == "Resume/CV"
+              ? "https://github.com/ShrikantJawla/Resume/raw/main/Shrikant_Jawla_Resume.pdf"
+              : `#${ele.url}`
+          }
+          download={ele.title == "Resume/CV" && "Shrikant_Jawla_resume"}
+        >
+          <p className="group text-[19px] font-[600] text-[#55505B] dark:text-white hover:scale-125 hover:text-[--theme_purple] hover:dark:text-[--theme_purple] transition-scale duration-300 transition-ease relative before:content-[''] before:absolute before:bottom-[-2px] before:height-[6px] before:w-[0] group-hover:before:w-full group-hover:before:border before:border-[--theme_purple] dark:before:border-white before:rounded-[50px] before:transition-width before:duration-[0.9s] before:transition-ease">
+            {ele.title}
+          </p>
+        </a>
+      ))}
+      {/* <ThemeSwither /> */}
+      <Image
+        className="cursor-pointer lg:hidden"
+        src={HamBurgerIcon}
+        alt="HamBurgerIcon"
+        height={29}
+        width={29}
+        onClick={() => setIsOpen(true)}
+      />
+      <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
+    </div>
+  );
+};
+
+export default Navbar;
+
+function SideBar({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: Function;
+}) {
   return (
     <div
-      className={`h-[90px] py-1 px-10 flex justify-between fixed top-0 left-0 right-0 z-[300] ${
-        active &&
-        'bg-clip-padding backdrop-filter bg-black md:backdrop-blur-xl bg-opacity-60'
-      } `}
+      className={`w-[100vw] h-[100vh] flex flex-col justify-start items-center bg-[--theme_purple] z-50 fixed right-0 top-0 transition-all duration-1000 ease-in-out ${
+        isOpen ? "clip_path_visible" : "clip_path_hidden"
+      }`}
     >
-      <div className="w-[80px] h-full flex justify-center items-center">
-        <img
-          className="w-[50px]"
-          src="https://github.com/ShrikantJawla/Images/blob/main/logo.png?raw=true"
-          alt="logo"
+      <div className="w-full h-[90px] flex justify-end items-center px-4 border-b">
+        <Image
+          src={closeIcon}
+          alt="Close Button"
+          className="transition-scale duration-300 ease-in-out cursor-pointer hover:scale-110"
+          onClick={() => setIsOpen(false)}
         />
       </div>
-      <div className=" w-fit flex justify-center items-center space-x-8 ">
-        {navLinksWithScrollMapping.map((item, ind) => (
-          <a
-            href={`#${item.link}`}
-            className={`nav_btn hidden sm:flex ${
-              scrollPosition <= item.maxPos &&
-              scrollPosition >= item.minPos &&
-              'text-red-500 font-extrabold'
-            } font-[FiraCode] text-white text-[20px]`}
-            key={uuidv4()}
-          >
-            {item.name}
-          </a>
+      <div className="flex flex-col gap-4 mt-5">
+        {links.map((ele, ind, arr) => (
+          <div className="group w-full px-16 py-2 " key={ind}>
+            <a href={`#${ele.url}`} onClick={() => setIsOpen(false)}>
+              <p className="group text-3xl font-[600] text-white cursor-pointer relative before:content-[''] before:w-0  group-hover:before:border before:h-[4px] before:bg-white before-b-white before:absolute before:bottom-[-4px] before:transition-w before:duration-700 before:ease-in-out group-hover:before:w-full">
+                {ele.title}
+              </p>
+            </a>
+          </div>
         ))}
-        <a
-          onClick={trackDownload}
-          href="https://github.com/ShrikantJawla/Resume/raw/main/Shrikant_Jawla_Resume.pdf"
-          download="Shrikant_Jawla_resume"
-          className="uppercase text-[12px] hover:text-blue-500 transition duration-200 ease-in-out hover:scale-105 hidden sm:flex border-[1px] border-sky-600 p-2 px-4 text-sky-600 cursor-pointer"
-        >
-          resume
-        </a>
-        <HamBurgerNav />
       </div>
     </div>
-  )
+  );
 }
-
-export default Navbar
