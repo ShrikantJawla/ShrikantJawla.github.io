@@ -21,7 +21,7 @@ const ContactUsSection = (props: Props) => {
               concept and strategy to code, get in touch.
             </p>
           </div>
-          <div className="w-full flex flex-col gap-4 mt-8">
+          <div className="w-full flex flex-col gap-4 mt-8 items-start">
             <div className="w-full flex items-start gap-5">
               <Image src={map} alt="map icon" width={30} height={30} />
               <p className="text-[14px] md:text-[16px] font-[400] text-[]">
