@@ -22,19 +22,19 @@ const ContactUsSection = (props: Props) => {
             </p>
           </div>
           <div className="w-full flex flex-col gap-4 mt-8">
-            <div className="w-full flex items-center gap-5">
+            <div className="w-full flex items-start gap-5">
               <Image src={map} alt="map icon" width={30} height={30} />
               <p className="text-[14px] md:text-[16px] font-[400] text-[]">
                 Currently in Panchkula
               </p>
             </div>
-            <div className="w-full flex items-center gap-5">
+            <div className="w-full flex items-start gap-5">
               <Image src={message} alt="map icon" width={30} height={30} />
               <p className="text-[14px] md:text-[16px] font-[400] text-[]">
                 Email: shrikantjawla@gmail.com
               </p>
             </div>
-            <div className="w-full flex items-center gap-5">
+            <div className="w-full flex items-start gap-5">
               <Image src={wattsapp} alt="map icon" width={30} height={30} />
               <p className="text-[14px] md:text-[16px] font-[400] text-[]">
                 Phone: +91 9069006661
