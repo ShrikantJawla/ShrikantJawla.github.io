@@ -71,12 +71,6 @@ jobs:
         with:
           path: ./out
 
-      - name: Upload static files (fallback)
-        uses: actions/upload-artifact@v3
-        with:
-          name: nextjs-pages
-          path: ./out
-
   deploy:
     environment:
       name: github-pages
