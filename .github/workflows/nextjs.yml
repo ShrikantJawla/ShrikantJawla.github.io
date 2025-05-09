@@ -23,7 +23,7 @@ jobs:
 
       # ✅ Preload upload-artifact@v3 to avoid "Missing download info" error
       - name: Preload upload-artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: preload-dummy
           path: ./nonexistent-file
