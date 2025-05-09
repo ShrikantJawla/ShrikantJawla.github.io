@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: "export",
   images: {
     unoptimized: true, // Disable image optimization for static export
     remotePatterns: [
@@ -9,12 +9,15 @@ const nextConfig = {
         hostname: "github-readme-streak-stats.herokuapp.com",
         port: "",
         pathname: "*",
-      }
+      },
     ],
   },
   experimental: {
-    metadataBase: new URL('http://localhost:3000')
-  }
+    metadataBase: new URL("http://localhost:3000"),
+  },
+  output: "export",
+  basePath: "ShrikantJawla.github.io",
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
