@@ -19,7 +19,7 @@ export default function Home() {
           <Navbar />
         </section>
         {/* Home Section */}
-        <section className="section_common_padding max-w-[1600px] " id="__home">
+        <section className="section_common_padding max-w-[1600px]" id="__home">
           <HomeSection />
         </section>
         {/* Divider */}
@@ -35,10 +35,10 @@ export default function Home() {
         </section>
         {/* Project section */}
         <section
-          className="section_common_padding dark:bg-black light:bg-[#f9f9f9] "
+          className="section_common_padding dark:bg-black light:bg-[#f9f9f9] max-w-[1600px]"
           id="__projects"
         >
-          <div className="w-full max-w-[1600px] px-[10px] md:px-[17px]">
+          <div className="w-full px-[10px] md:px-[17px]">
             <ProjectSection />
           </div>
         </section>
