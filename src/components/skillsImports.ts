@@ -25,6 +25,7 @@ import ansible from "@/assets/Images/skills/ansible.svg";
 import jenkins from "@/assets/Images/skills/jenkins.svg";
 import docker from "@/assets/Images/skills/docker.svg";
 import githubactions from "@/assets/Images/skills/githubactions.svg";
+import razorPay from "@/assets/Images/skills/razorpay.svg";
 
 export {
   html,
@@ -53,5 +54,6 @@ export {
   ansible,
   jenkins,
   docker,
-  githubactions
+  githubactions,
+  razorPay,
 };

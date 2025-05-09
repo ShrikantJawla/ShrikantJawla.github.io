@@ -19,8 +19,6 @@ import {
   tailwind,
   postgresql,
   github,
-  chakraui,
-  nestjs,
   fastapi,
   linux,
   aws,
@@ -28,7 +26,7 @@ import {
   ansible,
   jenkins,
   docker,
-  githubactions
+  githubactions,
 } from "@/components/skillsImports";
 import Image, { StaticImageData } from "next/image";
 
@@ -56,7 +54,11 @@ let skillsArray: ISkillsArrays[] = [
   { title: "PostgreSQL", image: postgresql, skillType: ["all", "backend"] },
   { title: "Git", image: git, skillType: ["all", "version Control"] },
   { title: "Github", image: github, skillType: ["all", "version Control"] },
-  { title: "Github Actions", image: githubactions, skillType: ["all", "devops"] },
+  {
+    title: "Github Actions",
+    image: githubactions,
+    skillType: ["all", "devops"],
+  },
   { title: "Linux", image: linux, skillType: ["all", "devops"] },
   { title: "Docker", image: docker, skillType: ["all", "devops"] },
   { title: "AWS", image: aws, skillType: ["all", "devops"] },
