@@ -79,18 +79,13 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./out
-      - name: Upload static files (fallback)
-        uses: actions/upload-artifact@v3
-        with:
-          name: nextjs-pages
-          path: ./out
 
   # Deployment job
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: build
     steps:
       - name: Deploy to GitHub Pages
