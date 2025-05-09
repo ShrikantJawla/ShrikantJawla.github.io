@@ -14,7 +14,9 @@ const nextConfig = {
   },
   experimental: {
     metadataBase: new URL("http://localhost:3000"),
-  }
+  },
+  output: "export",
+  basePath: "/ShrikantJawla.github.io", // Important for GitHub Pages
 };
 
 module.exports = nextConfig;
