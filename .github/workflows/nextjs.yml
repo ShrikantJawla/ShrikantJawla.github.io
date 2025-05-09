@@ -1,4 +1,3 @@
----
 name: Deploy Next.js site to Pages
 
 on:
@@ -21,6 +20,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      # ✅ Preload upload-artifact@v3 to avoid "Missing download info" error
+      - name: Preload upload-artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: preload-dummy
+          path: ./nonexistent-file
+          if-no-files-found: ignore
 
       - name: Detect package manager
         id: detect-package-manager
@@ -71,12 +78,11 @@ jobs:
         with:
           path: ./out
 
-
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-22.04   # ✅ Use stable runner here too
+    runs-on: ubuntu-22.04
     needs: build
     steps:
       - name: Deploy to GitHub Pages
