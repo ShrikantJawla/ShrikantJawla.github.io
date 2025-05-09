@@ -25,7 +25,7 @@ const ContactUsSection = (props: Props) => {
             <div className="w-full flex items-start gap-5">
               <Image src={map} alt="map icon" width={30} height={30} />
               <p className="text-[14px] md:text-[16px] font-[400] text-[]">
-                Currently in Panchkula
+                Currently in New Delhi
               </p>
             </div>
             <div className="w-full flex items-start gap-5">
