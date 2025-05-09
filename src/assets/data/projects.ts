@@ -105,7 +105,7 @@ export const projects: IProjects[] = [
   },
 
   {
-    title: "Bio Data Maker",
+    title: "Bio-Data Maker",
     desc: "It is used for creating or displaying biodata or resumes, possibly as part of a development project. However, specific details about its functionality are not publicly available.",
     images: [
       "https://github.com/ShrikantJawla/portfolio_images/blob/main/projects/biodatamaker/biodataMaker.png?raw=true",
