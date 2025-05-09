@@ -79,6 +79,11 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./out
+      - name: Upload static files (fallback)
+        uses: actions/upload-artifact@v3
+        with:
+          name: nextjs-pages
+          path: ./out
 
   # Deployment job
   deploy:
