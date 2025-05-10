@@ -12,7 +12,7 @@ type Props = {};
 
 const HomeSection = (props: Props) => {
   return (
-    <div className="min-h-[418px] w-full bg-[--theme_purple] px-[15px] md:px-[25px] lg:px-[25px] xl:px-[85px] 2xl:px-[135px] py-[10px] md:py-[20px] rounded-[--section_br_radius] flex flex-col md:flex-row justify-between items-center relative pb-16 md:pb-1">
+    <div className="min-h-[418px] w-full bg-[--theme_purple] px-[15px] md:px-[25px] lg:px-[25px] xl:px-[85px] 2xl:px-[135px] py-[10px] md:py-[20px] rounded-[--section_br_radius] flex flex-col md:flex-row justify-between items-center relative">
       {/* Profile Image */}
       <div className="w-full lg:w-[360px] flex justify-center">
         <Image
@@ -44,10 +44,13 @@ const HomeSection = (props: Props) => {
             <span className="inline-flex lg:h-[9px] justify-center items-center mr-1 relative top-[-5px]">
               <p className="w-[35px] h-[0.8px] bg-white"></p>
             </span>
-            Aspiring Full Stack Web Developer equipped with skills like NextJS,
-            React, Redux, HTML, and CSS, Nodejs, Expressjs, Nestjs, MongoDb,
-            PostgreSQL.A team player and intensely interested in obtaining a Web
-            developer position to work on enhancing the product experience.
+            Aspiring Full-Stack Web Developer with over 3+ years of experience
+            in building scalable, user-centric applications. Proficient inmodern
+            frontend and backend stacks like React, Next.js, Node.js, and
+            FastAPI. Skilled in DevOps, CI/CD pipelines, andcloud deployment
+            with tools like Docker, Jenkins, GitHub Actions, and AWS. Adept at
+            designing robust APIs, secureadmin dashboards, and automating
+            workflows to streamline product development.
           </h2>
         </div>
         <div className="w-full md:w-[400px] lg:w-[604px] mt-[25px]">
