@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NextThemeProvider from "@/components/Provider";
+// import NextThemeProvider from "@/components/Provider";
 
 export const metadata: Metadata = {
   title: "Shrikant Jawla | Full Stack Web Developer",
@@ -32,7 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NextThemeProvider>{children}</NextThemeProvider>
+        {/* <NextThemeProvider>{children}</NextThemeProvider> */}
+        {children}
       </body>
     </html>
   );

@@ -13,7 +13,6 @@ const ThemeSwither = (props: Props) => {
 
   useEffect(() => {
     setMounted(true);
-    setTheme("light");
   }, []);
   if (!mounted) {
     return null;
