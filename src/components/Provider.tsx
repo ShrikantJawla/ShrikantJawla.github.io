@@ -11,6 +11,7 @@ export default function NextThemeProvider({
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    localStorage.setItem("theme", "light");
     setMounted(true);
   }, []);
 

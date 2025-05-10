@@ -12,6 +12,7 @@ const ThemeSwither = (props: Props) => {
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
+    setTheme('light')
     setMounted(true);
   }, []);
   if (!mounted) {
