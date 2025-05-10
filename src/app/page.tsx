@@ -1,11 +1,11 @@
 import ContactUsSection from "@/components/ContactUsSection";
-// import GithubStats from "@/components/GithubStats";
 import HomeSection from "@/components/HomeSection";
 import Navbar from "@/components/Navbar";
 import ProjectSection from "@/components/ProjectSection";
 import SkillsSection from "@/components/SkillsSection";
 import SocialLinks from "@/components/SocialLinks";
 import StillHereTextSection from "@/components/StillHereTextSection";
+// import GithubStats from "@/components/GithubStats";
 // import dynamic from "next/dynamic";
 // const GithubCalender = dynamic(() => import("@/components/GithubCalender"), {
 //   ssr: false,

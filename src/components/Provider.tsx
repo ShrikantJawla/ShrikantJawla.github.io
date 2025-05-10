@@ -17,5 +17,9 @@ export default function NextThemeProvider({
   if (!mounted) {
     return <>{children}</>;
   }
-  return <ThemeProvider attribute="class">{children}</ThemeProvider>;
+  return (
+    <ThemeProvider defaultTheme="light" attribute="class">
+      {children}
+    </ThemeProvider>
+  );
 }

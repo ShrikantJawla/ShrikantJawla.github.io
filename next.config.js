@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -12,11 +11,11 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    metadataBase: new URL("http://localhost:3000"),
-  },
+  // experimental: {
+  //   metadataBase: new URL("http://localhost:3000"),
+  // },
   output: "export",
-  basePath: "/ShrikantJawla.github.io", // Important for GitHub Pages
+  basePath: "/ShrikantJawla.github.io", 
 };
 
 module.exports = nextConfig;
