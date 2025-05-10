@@ -12,7 +12,7 @@ type Props = {};
 
 const HomeSection = (props: Props) => {
   return (
-    <div className="min-h-[418px] w-full bg-[--theme_purple] px-[15px] md:px-[25px] lg:px-[25px] xl:px-[85px] 2xl:px-[135px] py-[10px] md:py-[20px] rounded-[--section_br_radius] flex flex-col md:flex-row justify-between items-center relative">
+    <div className="min-h-[418px] w-full bg-[--theme_purple] px-[15px] md:px-[25px] lg:px-[25px] xl:px-[85px] 2xl:px-[135px] py-[30px] md:py-[25px] pb-[110px] md:pb-[30px] rounded-[--section_br_radius] flex flex-col md:flex-row justify-between items-center relative">
       {/* Profile Image */}
       <div className="w-full lg:w-[360px] flex justify-center">
         <Image
